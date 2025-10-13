@@ -1,0 +1,35 @@
+---
+layout: pages
+title: News
+group: news
+heading: Latest Updates from the Guelph Medical AI Lab
+bgimage: /images/guelph_page_header_banner.png
+---
+
+<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8;">
+
+<div style="padding: 2.5em; background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2em;">
+  <p style="font-size: 1.2em; color: #334155; margin: 0;">
+    📰 News and updates will be posted here. Check back soon for the latest from our lab!
+  </p>
+</div>
+
+<!-- News posts will appear below when added to _posts/ directory -->
+<div class="row">
+    <div class="12u">
+    {% for post in site.posts %}
+        <div style="padding: 2em; background: white; border-left: 4px solid #3b82f6; border-radius: 8px; margin-bottom: 2em; box-shadow: 0 2px 8px rgba(0,0,0,0.06);">
+            <h3 style="color: #1e293b; margin-top: 0;"><a href="{{ post.url }}" style="text-decoration: none; color: #1e293b;">{{ post.title }}</a></h3>
+            <p style="color: #64748b; font-size: 0.95em; margin-bottom: 1em;">
+                <em>{{ post.date | date_to_long_string }}</em>
+            </p>
+            <div style="color: #334155;">
+                {{ post.content }}
+            </div>
+        </div>
+        <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 2em 0;">
+    {% endfor %}
+    </div>
+</div>
+
+</div>

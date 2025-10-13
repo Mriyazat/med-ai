@@ -1,0 +1,3 @@
+baseurl: "/MedAI-Lab"
+exclude: ['README.md']
+markdown: kramdown

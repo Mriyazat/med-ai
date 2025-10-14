@@ -1,66 +1,88 @@
 - image: '/images/guelph_homepage_banner.png'
-  title: '<strong><em>Welcome to the Guelph Medical Artificial Intelligence Lab</em></strong>'
+  title: '<strong><em>Welcome to the Medical Artificial Intelligence Lab</em></strong>'
   content: '
-  <div style="font-family: -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;">
+  <div style="max-width: 1300px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;">
   
-  <p style="font-size: 1.15em; line-height: 1.8; margin-bottom: 1.5em; color: #334155;">
+  <p style="font-size: 1em; line-height: 1.6; margin-bottom: 3em; color: #475569; text-align: center; font-style: italic;">
     We are part of the 
-    <a href="https://www.uoguelph.ca/engineering/" style="color: #1e40af; font-weight: 600; text-decoration: none; border-bottom: 2px solid #93c5fd;"><strong>School of Engineering</strong></a> 
+    <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">School of Engineering</a> 
     at the
-    <a href="https://www.uoguelph.ca/" style="color: #1e40af; font-weight: 600; text-decoration: none; border-bottom: 2px solid #93c5fd;"><strong>University of Guelph</strong></a>
-    <br><em style="font-size: 1.02em; color: #991b1b;">📍 Guelph, Ontario, Canada</em>
+    <a href="https://www.uoguelph.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">University of Guelph</a>, Guelph, Ontario, Canada.
   </p>
 
-  <div style="font-size: 1.08em; line-height: 1.9; margin-bottom: 2em; padding: 1.5em; background: linear-gradient(to right, #f8fafc, #f1f5f9); border-left: 4px solid #3b82f6; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <p style="margin-bottom: 1.5em; color: #1e293b; font-size: 1.05em;">
-      We build <strong style="color: #dc2626;"><em>intelligent systems</em></strong> to address critical challenges in 
-      <strong style="color: #6366f1;">healthcare</strong>. Our research focuses on developing 
-      <strong style="color: #dc2626;"><em>AI models</em></strong> for automated medical image analysis, with an emphasis on:
+  <div style="margin-bottom: 3em;">
+    <p style="font-size: 1.4em; line-height: 1.8; margin-bottom: 1.5em; color: #334155; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 700; font-style: italic;">
+      We develop AI solutions for healthcare to enable early diagnosis.
     </p>
-    <div style="margin-left: 1.5em; margin-bottom: 0.5em;">
-      <p style="margin-bottom: 1em; color: #334155; line-height: 1.8;">
-        <strong style="color: #047857;">• Predictive Health:</strong> Leveraging deep learning for early disease diagnosis and prognosis.
-      </p>
-      <p style="margin-bottom: 1em; color: #334155; line-height: 1.8;">
-        <strong style="color: #047857;">• Holistic Analysis:</strong> Enhancing healthcare outcomes by integrating multi-modal data from diverse clinical sources.
-      </p>
-      <p style="margin-bottom: 0; color: #334155; line-height: 1.8;">
-        <strong style="color: #047857;">• Trusted AI:</strong> Promoting model interpretability and transparency through 
-        <em style="color: #7c3aed;">explainable AI (XAI)</em> to support clinicians.
-      </p>
+    
+    <div style="display: flex; flex-direction: column; gap: 1.5em; margin-top: 0; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
+        <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🎯 Predictive Health:</h3>
+        <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Applying deep learning for early disease detection and outcome prediction.</p>
+      </div>
+      
+      <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
+        <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🔬 Holistic Analysis:</h3>
+        <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Integrating multi-modal data to enable comprehensive clinical insights.</p>
+      </div>
+      
+      <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
+        <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">✓ Trusted AI:</h3>
+        <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Advancing explainable and transparent models for clinical decision support.</p>
+      </div>
+      
+      <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
+        <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🤖 Generative AI:</h3>
+        <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Utilizing generative models for data synthesis, image enhancement, and disease simulation.</p>
+      </div>
     </div>
   </div>
 
-  <div style="padding: 2em 0; margin-bottom: 1.5em;">
-    <h3 style="color: #1e293b; margin-top: 0; margin-bottom: 1.5em; font-size: 1.2em; font-weight: 700; letter-spacing: -0.2px; text-transform: uppercase; text-align: center; border-bottom: 2px solid #3b82f6; padding-bottom: 0.6em;">
-      Research Partners & Collaborators
+  <div style="margin-top: 4em; padding-top: 3em; border-top: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; margin-bottom: 2em; font-size: 1.15em; font-weight: 700; font-style: italic; text-align: center; text-transform: uppercase; letter-spacing: 0.5px;">
+      Research Partners & Collaborators:
     </h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.2em; font-size: 1.05em;">
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://www.ottawahospital.on.ca/en/" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">The Ottawa Hospital</a>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5em; margin-bottom: 3em;">
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.ottawahospital.on.ca/en/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">The Ottawa Hospital</a>
       </div>
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://www.mitacs.ca/" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">Mitacs</a>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.mitacs.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Mitacs</a>
       </div>
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">NSERC</a>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">NSERC</a>
       </div>
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://ai-vali.com/" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">A.I. VALI</a>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://ai-vali.com/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">A.I. VALI</a>
       </div>
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://www.altislabs.com/" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">Altis Labs</a>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.altislabs.com/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Altis Labs</a>
       </div>
-      <div style="background: linear-gradient(135deg, #ffffff, #f8fafc); padding: 1.2em; border-radius: 8px; border: 1px solid #cbd5e1; box-shadow: 0 2px 6px rgba(0,0,0,0.08); transition: all 0.3s; text-align: center; border-top: 3px solid #3b82f6;">
-        <a href="https://www.alliancecan.ca/en" style="color: #1e40af; font-weight: 600; text-decoration: none; display: block;">Digital Research Alliance of Canada</a>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.alliancecan.ca/en" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Digital Research Alliance of Canada</a>
+      </div>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.uottawa.ca/faculty-medicine/directory/dr-nicola-schieda" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Nicola Schieda</a>
+        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Director of Abdominal and Pelvic MRI and Prostate Imaging, University of Ottawa</p>
+      </div>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://libin.ucalgary.ca/node/287" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. James White</a>
+        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Stephenson Cardiac Imaging Centre, Libin Cardiovascular Institute, University of Calgary</p>
+      </div>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://www.robarts.ca/research/scientists/fenster_aaron.html" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Aaron Fenster</a>
+        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Robarts Research Institute, Western University</p>
+      </div>
+      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
+        <a href="https://ovc.uoguelph.ca/clinical-studies/faculty/ryan-appleby/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Ryan Appleby</a>
+        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Ontario Veterinary College, University of Guelph</p>
       </div>
     </div>
   </div>
 
-  <p style="text-align: center; font-size: 1.08em; padding: 1.2em; background: linear-gradient(135deg, #faf5ff 0%, #f5f3ff 100%); border-radius: 6px; border: 1px solid #a78bfa; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-    <strong style="color: #6d28d9;">Contact Information:</strong> 
-    <a href="/contact" style="color: #7c3aed; font-weight: 700; text-decoration: none; border-bottom: 2px solid #c4b5fd; padding: 0.2em 0.5em;">Get in Touch</a>
-  </p>
+  <div style="text-align: center; margin-top: 3em; padding: 1.5em; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+    <a href="/med-ai/contact" style="color: #2563eb; font-weight: 600; text-decoration: none; font-size: 1.1em;">Get in Touch →</a>
+  </div>
   
   </div>
 '

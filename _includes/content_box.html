@@ -5,8 +5,8 @@
       <div class="grid-style">
         {% for content in site.data.contentbox %}
           <div class="HomepageBox">
-              <div class="homeBox">
-                  <span class="image fit imgfit"><img src="{{site.baseurl}}{{content.image}}" alt="" /></span>
+              <div class="homeBox" style="margin: 0; padding: 0; overflow: hidden;">
+                  <span class="image fit imgfit" style="display: block; margin: 0; padding: 0;"><img src="{{site.baseurl}}{{content.image}}" alt="" style="display: block; margin: 0; padding: 0; width: 100%;" /></span>
               </div>
               <div class="content">
                   <header class="align-center">

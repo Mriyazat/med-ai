@@ -1,19 +1,19 @@
-<section class="banner full">
+<section class="banner full" style="margin: 0; padding: 0; overflow: hidden;">
 {% for slide in site.data.slides %}
     
-    <article>
+    <article style="position: relative; margin: 0; padding: 0; overflow: hidden;">
         {% if slide.video %}
-            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0;">
+            <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; margin: 0; padding: 0; display: block; z-index: 0;">
                 <source src="{{site.baseurl}}{{slide.video}}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         {% else %}
-            <img src="{{site.baseurl}}{{slide.image}}" alt="" />
+            <img src="{{site.baseurl}}{{slide.image}}" alt="" style="display: block; margin: 0; padding: 0;" />
         {% endif %}
-        <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center;">
+        <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 2;">
             <header>
                 <h2 style="font-size: 2.5em; font-style: italic;"><em>Medical Artificial Intelligence Lab</em></h2>
-                <h3 style="font-size: 1.3em; font-style: italic;"><em>supervised by Dr. Eran Ukwatta</em></h3>
+                <h3 style="font-size: 1.3em; font-style: italic;"><em>Supervised by Dr. Eran Ukwatta</em></h3>
             </header>
         </div>
     </article>    

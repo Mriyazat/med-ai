@@ -1,5 +1,5 @@
-baseurl: ""
-url: "https://med-ai.uoguelph.ca"
+baseurl: "/med-ai"
+url: ""
 exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 future: true

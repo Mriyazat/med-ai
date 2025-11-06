@@ -2,19 +2,422 @@
 title: Members
 layout: pages
 group: members
-heading: Our Lab Members
 bgimage: /images/guelph_page_header_banner.png
 ---
 
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8;">
+<style>
+  .members-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .member-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 2.5em;
+    margin-bottom: 2em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .member-card:hover {
+    border-color: #3b82f6;
+  }
+  
+  .member-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 2em;
+    margin-bottom: 2em;
+    flex-wrap: wrap;
+  }
+  
+  .member-photo {
+    flex-shrink: 0;
+  }
+  
+  .member-photo img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .member-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .member-name {
+    font-size: 1.8em;
+    font-weight: bold;
+    font-style: italic;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 0.3em;
+  }
+  
+  .member-position {
+    font-size: 1.1em;
+    font-weight: bold;
+    font-style: italic;
+    color: #111827;
+    margin-bottom: 1em;
+  }
+  
+  .member-bio {
+    color: #374151;
+    font-size: 1em;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 1em;
+  }
+  
+  .member-social-links {
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+    align-items: center;
+  }
+  
+  .member-social-links a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+  }
+  
+  .member-social-links a:hover {
+    opacity: 0.7;
+  }
+  
+  .member-social-links img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .research-images-section {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .research-images-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    color: #111827;
+    margin-bottom: 1.5em;
+  }
+  
+  .research-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5em;
+  }
+  
+  .research-image-item {
+    text-align: center;
+  }
+  
+  .research-image-item img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .research-image-item img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .member-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    
+    .member-photo img {
+      width: 150px;
+      height: 150px;
+    }
+    
+  .research-images-grid {
+    grid-template-columns: 1fr;
+  }
+}
 
-<div style="padding: 2.5em; background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2em;">
-  <p style="font-size: 1.2em; color: #334155; margin: 0;">
-    👥 Lab members will be listed here. Check back soon to meet our research team!
-  </p>
+/* Alumni Styles */
+.alumni-section {
+  margin-top: 4em;
+  padding-top: 3em;
+  border-top: 1px solid #e5e7eb;
+}
+
+.alumni-section-title {
+  font-size: 2em;
+  font-weight: bold;
+  font-style: italic;
+  color: #111827;
+  margin-bottom: 2.5em;
+}
+
+.alumni-group {
+  margin-bottom: 3em;
+}
+
+.alumni-group-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  font-style: italic;
+  color: #111827;
+  margin-bottom: 1.5em;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.alumni-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1em;
+}
+
+.alumni-item {
+  padding: 1em 1.5em;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.alumni-item:hover {
+  border-color: #3b82f6;
+}
+
+.alumni-name {
+  font-weight: bold;
+  font-style: italic;
+  color: #111827;
+  font-size: 1em;
+  margin-bottom: 0.4em;
+}
+
+.alumni-name a {
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.alumni-name a:hover {
+  color: #3b82f6;
+}
+
+.alumni-degree {
+  font-size: 0.85em;
+  color: #6b7280;
+  font-style: italic;
+}
+
+.alumni-institution {
+  font-size: 0.85em;
+  color: #6b7280;
+  line-height: 1.5;
+  margin-top: 0.3em;
+  font-style: italic;
+}
+
+@media (max-width: 768px) {
+  .alumni-list {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+
+<div class="members-container">
+
+{% if site.data.members.members %}
+  {% for member in site.data.members.members %}
+    
+    <article class="member-card">
+      
+      <!-- Member Header -->
+      <div class="member-header">
+        
+        <!-- Photo -->
+        {% if member.image %}
+          <div class="member-photo">
+            <img src="{{site.baseurl}}{{ member.image }}" alt="{{ member.name }}">
+          </div>
+        {% endif %}
+        
+        <!-- Name and Info -->
+        <div class="member-info">
+          <h2 class="member-name">{{ member.name }}</h2>
+          <div class="member-position">{{ member.position }}</div>
+          <div class="member-bio">{{ member.bio }}</div>
+          
+          <!-- Social Links -->
+          {% if member.linkedin or member.google_scholar or member.github %}
+            <div class="member-social-links">
+              {% if member.linkedin %}
+                <a href="{{ member.linkedin }}" target="_blank" title="LinkedIn">
+                  <img src="{{site.baseurl}}/images/logos/linkedin_logo.svg" alt="LinkedIn">
+                </a>
+              {% endif %}
+              {% if member.google_scholar %}
+                <a href="{{ member.google_scholar }}" target="_blank" title="Google Scholar">
+                  <img src="{{site.baseurl}}/images/logos/gscholar_logo.svg" alt="Google Scholar">
+                </a>
+              {% endif %}
+              {% if member.github %}
+                <a href="{{ member.github }}" target="_blank" title="GitHub">
+                  <img src="{{site.baseurl}}/images/logos/github_logo.svg" alt="GitHub">
+                </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      
+      <!-- Research Images -->
+      {% if member.research_images %}
+        <div class="research-images-section">
+          <h3 class="research-images-title">{{ member.name | split: ' ' | first }}'s Research</h3>
+          <div class="research-images-grid">
+            {% for image in member.research_images %}
+              <div class="research-image-item">
+                <img src="{{site.baseurl}}{{ image }}" alt="{{ member.name }} research image {{ forloop.index }}">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+      
+    </article>
+    
+  {% endfor %}
+{% else %}
+  <div style="padding: 2em; text-align: center; color: #6b7280;">
+    <p>Lab members will be listed here.</p>
+  </div>
+{% endif %}
+
+<!-- Alumni Section -->
+{% if site.data.alumni %}
+<div class="alumni-section">
+  <h2 class="alumni-section-title">Alumni</h2>
+  
+  <!-- Graduate Students -->
+  {% if site.data.alumni.graduate_students %}
+    {% assign phd_students = site.data.alumni.graduate_students | where: "degree", "PhD" %}
+    {% assign masc_students = site.data.alumni.graduate_students | where: "degree", "MASc" %}
+    {% assign meng_students = site.data.alumni.graduate_students | where: "degree", "MEng" %}
+    
+    <!-- PhD Students -->
+    {% if phd_students.size > 0 %}
+      <div class="alumni-group">
+        <h3 class="alumni-group-title">PhD Graduates</h3>
+        <div class="alumni-list">
+          {% for student in phd_students %}
+            <div class="alumni-item" data-degree="PhD">
+              <div class="alumni-name">
+                {% if student.linkedin %}
+                  <a href="{{ student.linkedin }}" target="_blank" title="LinkedIn">{{ student.name }}</a>
+                {% else %}
+                  {{ student.name }}
+                {% endif %}
+              </div>
+              <div class="alumni-degree">{{ student.degree }}</div>
+              {% if student.years and student.years != '' %}
+                <div class="alumni-institution">{{ student.years }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+    
+    <!-- MASc Students -->
+    {% if masc_students.size > 0 %}
+      <div class="alumni-group">
+        <h3 class="alumni-group-title">MASc Graduates</h3>
+        <div class="alumni-list">
+          {% for student in masc_students %}
+            <div class="alumni-item" data-degree="MASc">
+              <div class="alumni-name">
+                {% if student.linkedin %}
+                  <a href="{{ student.linkedin }}" target="_blank" title="LinkedIn">{{ student.name }}</a>
+                {% else %}
+                  {{ student.name }}
+                {% endif %}
+              </div>
+              <div class="alumni-degree">{{ student.degree }}</div>
+              {% if student.years and student.years != '' %}
+                <div class="alumni-institution">{{ student.years }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
+  
+  <!-- Undergraduate Students -->
+  {% if site.data.alumni.undergraduate_students %}
+    <div class="alumni-group">
+      <h3 class="alumni-group-title">Undergraduate Students</h3>
+      <div class="alumni-list">
+        {% for student in site.data.alumni.undergraduate_students %}
+          <div class="alumni-item">
+            <div class="alumni-name">
+              {% if student.linkedin %}
+                <a href="{{ student.linkedin }}" target="_blank" title="LinkedIn">{{ student.name }}</a>
+              {% else %}
+                {{ student.name }}
+              {% endif %}
+            </div>
+            {% if student.institution %}
+              <div class="alumni-institution">{{ student.institution }}</div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+  
+  <!-- MEng Students -->
+  {% if site.data.alumni.graduate_students %}
+    {% assign meng_students = site.data.alumni.graduate_students | where: "degree", "MEng" %}
+    {% if meng_students.size > 0 %}
+      <div class="alumni-group">
+        <h3 class="alumni-group-title">MEng Graduates</h3>
+        <div class="alumni-list">
+          {% for student in meng_students %}
+            <div class="alumni-item" data-degree="MEng">
+              <div class="alumni-name">
+                {% if student.linkedin %}
+                  <a href="{{ student.linkedin }}" target="_blank" title="LinkedIn">{{ student.name }}</a>
+                {% else %}
+                  {{ student.name }}
+                {% endif %}
+              </div>
+              <div class="alumni-degree">{{ student.degree }}</div>
+              {% if student.years and student.years != '' %}
+                <div class="alumni-institution">{{ student.years }}</div>
+              {% endif %}
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+  {% endif %}
 </div>
-
-<!-- Current lab members will appear below when added to _data/members.yml -->
-<!-- Alumni will appear below when added to _data/alumni.yml -->
+{% endif %}
 
 </div>

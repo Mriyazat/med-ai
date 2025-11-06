@@ -1,14 +1,14 @@
-<section class="banner full" style="margin: 0; padding: 0; overflow: hidden;">
+<section class="banner full" style="margin: 0; padding: 0; overflow: hidden; height: 75vh;">
 {% for slide in site.data.slides %}
     
-    <article style="position: relative; margin: 0; padding: 0; overflow: hidden;">
+    <article style="position: relative; margin: 0; padding: 0; overflow: hidden; height: 100%; width: 100%;">
         {% if slide.video %}
             <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; position: absolute; top: 0; left: 0; margin: 0; padding: 0; display: block; z-index: 0;">
                 <source src="{{site.baseurl}}{{slide.video}}" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         {% else %}
-            <img src="{{site.baseurl}}{{slide.image}}" alt="" style="display: block; margin: 0; padding: 0;" />
+            <img src="{{site.baseurl}}{{slide.image}}" alt="" style="display: block; margin: 0; padding: 0; width: 100%; height: 100%; object-fit: cover;" />
         {% endif %}
         <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 2;">
             <header>

@@ -1,2 +1,27 @@
-# Lab members will be added here
-# Format: name, position, image, email, optional social links, description
+# Current Lab Members
+
+members:
+  - name: "Zachary Szentimrey"
+    position: "PhD Candidate"
+    degree: "PhD"
+    image: "/images/members/zachary_szentimrey.jpg"
+    bio: "I obtained my undergraduate degree at the University of Guelph in Biomedical Engineering. I completed my MASc at the University of Guelph in 2021 and continued into my PhD. I was always interested in image analysis and signal processing through my undergraduate degree and pursued that interest into my graduate work. My research currently revolves around investigating identifying organs and regions of interest from ultrasound images. In my MASc, I investigated neonatal cerebral hemorrhaging. My project involved developing deep learning models to identify the cerebral ventricles of neonates and evaluate whether hemorrhaging is present or not. I continued this work into my PhD by developing leaner and more accurate models that used semi-supervised learning. I then partnered with Cosm from Toronto to help build models that can identify female pelvic floor anatomical structures and make measurements to help evaluate pelvic floor prolapse. My final PhD project included work with Oncoustics from Toronto to identify fatty liver disease in point-of-care ultrasound images. We not only segmented liver tissue but used those segmentations to determine the image quality."
+    research_images:
+      - "/images/research/Zachary_1.png"
+      - "/images/research/Zachary_2.png"
+      - "/images/research/Zachary_3.png"
+    linkedin: "https://www.linkedin.com/in/zachary-szentim/?originalSubdomain=ca"
+    google_scholar: "https://scholar.google.com/citations?hl=en&user=0tZ9AW4AAAAJ&view_op=list_works&sortby=pubdate"
+    github: "https://github.com/Zach-Sz"
+
+  - name: "Pramit Dutta"
+    position: "MASc Student"
+    degree: "MASc"
+    image: "/images/members/pramit_dutta.png"
+    bio: "I am a Graduate Research Assistant at the Medical Artificial Intelligence Lab at the University of Guelph, where I'm completing my MASc in Computer Engineering with a Specialization in Artificial Intelligence. I earned my B.Sc. in Electronics and Telecommunication Engineering from the Chittagong University of Engineering and Technology. My research interests center on multimodal and generative AI, with experience spanning hybrid feature extraction and self-supervised learning frameworks in medical imaging. Much of my work bridges the gap between algorithmic design and real-world clinical data, with the aim of developing systems that can assist in decision-making while minimizing reliance on labeled data. My research focuses on developing vision-language models (VLMs) for medical imaging. I explore how large pretrained models can be adapted to clinical data to improve interpretability and domain robustness, particularly through better domain adaptation techniques that bridge the gap between general and medical datasets. I work on integrating visual features from CT scans with language-based clinical information to enhance diagnostic insight and support clinical decision-making. Looking ahead, I aim to extend these multimodal learning approaches to other fields including veterinary imaging to advance scalable, cross-domain applications of AI in healthcare."
+    research_images:
+      - "/images/research/Pramit_1.png"
+      - "/images/research/Pramit_2.png"
+    linkedin: "https://www.linkedin.com/in/pramit-dutta/?originalSubdomain=bd"
+    google_scholar: "https://scholar.google.com/citations?hl=en&user=jfOjIKsAAAAJ&view_op=list_works&sortby=pubdate"
+    github: "https://github.com/PramitDutta1999"

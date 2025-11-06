@@ -2,18 +2,289 @@
 layout: pages
 title: Publications
 group: publications
-heading: Our Publications
 bgimage: /images/guelph_page_header_banner.png
 ---
 
-<div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8;">
+<style>
+  .publications-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .publication-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 2em;
+    margin-bottom: 2em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .publication-card:hover {
+    border-color: #3b82f6;
+  }
+  
+  .pub-title {
+    font-size: 1.4em;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 1.4;
+    margin-bottom: 0.5em;
+    color: #111827;
+  }
+  
+  .pub-title a {
+    color: #111827;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .pub-title a:hover {
+    color: #3b82f6;
+  }
+  
+  .pub-authors {
+    color: #374151;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    line-height: 1.6;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .pub-meta {
+    font-size: 0.95em;
+    color: #6b7280;
+    margin-bottom: 1.5em;
+    padding-bottom: 1.5em;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .pub-journal {
+    font-style: italic;
+    color: #111827;
+  }
+  
+  .pub-year {
+    font-style: italic;
+    color: #111827;
+  }
+  
+  .pub-image {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    margin: 1.5em auto;
+    display: block;
+  }
+  
+  .pub-image-container {
+    text-align: center;
+    margin: 2em 0;
+  }
+  
+  .image-caption {
+    font-size: 0.85em;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .abstract-section {
+    margin-top: 1em;
+  }
+  
+  .abstract-item {
+    margin-bottom: 1.2em;
+  }
+  
+  .abstract-label {
+    font-weight: 600;
+    color: #111827;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.4em;
+  }
+  
+  .abstract-text {
+    color: #4b5563;
+    font-size: 0.95em;
+    line-height: 1.7;
+    text-align: justify;
+  }
+  
+  .key-stats {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .stat-item {
+    background: #f9fafb;
+    padding: 0.8em 1.2em;
+    border-radius: 6px;
+    font-size: 0.85em;
+    color: #374151;
+    border: 1px solid #e5e7eb;
+  }
+  
+  .stat-value {
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  .scholar-link {
+    text-align: center;
+    margin-top: 3em;
+    padding: 2em;
+  }
+  
+  .scholar-link p {
+    color: #6b7280;
+    font-size: 0.95em;
+    margin-bottom: 1em;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .scholar-link a {
+    display: inline-block;
+    padding: 0.6em 1.5em;
+    color: #111827;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 0.95em;
+    transition: color 0.3s ease;
+  }
+  
+  .scholar-link a:hover {
+    color: #3b82f6;
+  }
+  
+  @media (max-width: 768px) {
+    .publication-card {
+      padding: 1.5em;
+    }
+    
+    .pub-title {
+      font-size: 1.2em;
+    }
+    
+    .pub-meta {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  }
+</style>
 
-<div style="padding: 2.5em; background: linear-gradient(135deg, #f8fafc 0%, #e0f2fe 100%); border-radius: 12px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.08); margin-bottom: 2em;">
-  <p style="font-size: 1.2em; color: #334155; margin: 0;">
-    📚 Publications will be listed here. Check back soon for our latest research papers!
-  </p>
+<div class="publications-container">
+
+{% if site.data.publications.publications %}
+  {% for pub in site.data.publications.publications %}
+    
+    <article class="publication-card">
+      
+      <!-- Title -->
+      <h2 class="pub-title">
+        <a href="{{ pub.article_url }}" target="_blank">{{ pub.title }}</a>
+      </h2>
+      
+      <!-- Authors -->
+      <div class="pub-authors">{{ pub.authors }}</div>
+      
+      <!-- Meta Information -->
+      <div class="pub-meta">
+        <span class="pub-journal">{{ pub.journal }}</span>, <span class="pub-year">{{ pub.year }}</span>
+        {% if pub.doi %}
+        <br><a href="{{ pub.doi }}" target="_blank" style="color: #3b82f6; text-decoration: none;">{{ pub.doi | remove: 'https://doi.org/' }}</a>
+        {% endif %}
+      </div>
+      
+      <!-- Image -->
+      {% if pub.image %}
+      <div class="pub-image-container">
+        <img src="{{site.baseurl}}{{ pub.image }}" alt="{{ pub.title }}" class="pub-image">
+        {% if pub.image_caption %}
+          <div class="image-caption">{{ pub.image_caption }}</div>
+        {% endif %}
+      </div>
+      {% endif %}
+      
+      <!-- Abstract Sections -->
+      {% if pub.abstract_sections %}
+        <div class="abstract-section">
+          
+          {% if pub.abstract_sections.background %}
+          <div class="abstract-item">
+            <div class="abstract-label">Background</div>
+            <div class="abstract-text">{{ pub.abstract_sections.background }}</div>
+          </div>
+          {% endif %}
+          
+          {% if pub.abstract_sections.purpose %}
+          <div class="abstract-item">
+            <div class="abstract-label">Purpose</div>
+            <div class="abstract-text">{{ pub.abstract_sections.purpose }}</div>
+          </div>
+          {% endif %}
+          
+          {% if pub.abstract_sections.methods %}
+          <div class="abstract-item">
+            <div class="abstract-label">Methods</div>
+            <div class="abstract-text">{{ pub.abstract_sections.methods }}</div>
+          </div>
+          {% endif %}
+          
+          {% if pub.abstract_sections.results %}
+          <div class="abstract-item">
+            <div class="abstract-label">Results</div>
+            <div class="abstract-text">{{ pub.abstract_sections.results }}</div>
+          </div>
+          {% endif %}
+          
+          {% if pub.abstract_sections.conclusions %}
+          <div class="abstract-item">
+            <div class="abstract-label">Conclusions</div>
+            <div class="abstract-text">{{ pub.abstract_sections.conclusions }}</div>
+          </div>
+          {% endif %}
+          
+        </div>
+      {% endif %}
+      
+      <!-- Key Statistics -->
+      {% if pub.key_stats %}
+        <div class="key-stats">
+          {% for stat in pub.key_stats %}
+            <div class="stat-item">{{ stat }}</div>
+          {% endfor %}
+        </div>
+      {% endif %}
+      
+    </article>
+    
+  {% endfor %}
+{% else %}
+  <div style="padding: 2em; text-align: center; color: #6b7280;">
+    <p>Publications will be listed here.</p>
+  </div>
+{% endif %}
+
+<!-- Google Scholar Link -->
+<div class="scholar-link">
+  <p style="color: #6b7280; margin-bottom: 1em;">For a complete list of publications</p>
+  <a href="https://scholar.google.ca/citations?hl=en&user=d4Q3lWcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">
+    View Google Scholar Profile
+  </a>
 </div>
-
-<!-- Publications will appear below when added to _data/publications.yml -->
 
 </div>

@@ -1,2 +1,81 @@
-# Alumni will be added here
-# Format: name, position, image, email, subsequent (what they're doing now), optional social links, description
+# Lab Alumni
+
+undergraduate_students:
+  - name: "Haris Zubair"
+    institution: "University of Guelph"
+    linkedin: "https://www.linkedin.com/in/haris-zubair-uofg/?originalSubdomain=ca"
+    
+  - name: "David Sebben"
+    institution: "University of Guelph"
+    linkedin: "https://www.linkedin.com/in/david-sebben-268bbb197/?originalSubdomain=ca"
+    
+  - name: "Jeffrey Lim"
+    institution: "University of Guelph"
+    linkedin: "https://www.linkedin.com/in/jeffreylim201/"
+    
+  - name: "Pranav Kumar A V"
+    institution: "National Institute of Technology, Tiruchirappalli"
+    linkedin: "https://www.linkedin.com/in/pranav31/"
+    
+  - name: "Sathvik Bhagavan"
+    institution: "Indian Institute of Technology Kanpur"
+    linkedin: "https://www.linkedin.com/in/sathvik-b-15b54b136/"
+
+graduate_students:
+  # MASc Students
+  - name: "Nicolas Belanger"
+    degree: "MASc"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/nicholas-belanger-126613113/?originalSubdomain=ca"
+    
+  - name: "Anush Agarwal"
+    degree: "MASc"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/anushagarwal/?originalSubdomain=ca"
+    
+  - name: "Abdullah Al-Hayali"
+    degree: "MASc"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/abdullahalhayali/"
+    
+  - name: "Miriam Naim Ibrahim"
+    degree: "MASc"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/miriam-naim-ibrahim/"
+    
+  - name: "Helena Kunic"
+    degree: "MASc"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/helena-kunic/?originalSubdomain=ca"
+    
+  # MEng Students
+  - name: "Daniel Cazes"
+    degree: "MEng"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/danielcazes/"
+    
+  # PhD Students
+  - name: "Rohini Prabhakar Gaikar"
+    degree: "PhD"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/rohini-gaikar/?originalSubdomain=ca"
+    
+  - name: "Jenita Manokaran"
+    degree: "PhD"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/jenita-priya/"
+    
+  - name: "Peyman Tahghighi"
+    degree: "PhD"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/peymantahghighi/?originalSubdomain=ca"
+    
+  - name: "Nadia Farrag"
+    degree: "PhD"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/nadia-farrag-263077b6/"
+    
+  - name: "Negin Piran Nanekaran"
+    degree: "PhD"
+    years: ""
+    linkedin: "https://www.linkedin.com/in/neginpiran/?originalSubdomain=ca"

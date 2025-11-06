@@ -2,31 +2,159 @@
 layout: pages
 title: News
 group: news
-heading: <strong><em>Latest Updates from the Lab</em></strong>
 bgimage: /images/guelph_page_header_banner.png
 ---
 
-<div style="max-width: 1100px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.8;">
+<style>
+  .news-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+  
+  .news-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 2.5em;
+    margin-bottom: 2em;
+    transition: border-color 0.3s ease;
+  }
+  
+  .news-card:hover {
+    border-color: #3b82f6;
+  }
+  
+  .news-title {
+    font-size: 1.6em;
+    font-weight: bold;
+    font-style: italic;
+    color: #111827;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    line-height: 1.4;
+  }
+  
+  .news-date {
+    font-size: 0.9em;
+    color: #6b7280;
+    font-style: italic;
+    margin-bottom: 1.5em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #f3f4f6;
+  }
+  
+  .news-content {
+    color: #374151;
+    font-size: 1em;
+    line-height: 1.8;
+    font-style: italic;
+  }
+  
+  .news-content img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e5e7eb;
+    margin: 1.5em auto;
+    display: block;
+  }
+  
+  .news-image-caption {
+    text-align: center;
+    font-size: 0.85em;
+    color: #6b7280;
+    font-style: italic;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+  }
+  
+  .news-content p {
+    margin-bottom: 1.2em;
+    text-align: justify;
+    font-style: italic;
+  }
+  
+  .news-content a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  .news-content a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+  }
+  
+  .news-quote {
+    padding: 1.5em 2em;
+    background: #f9fafb;
+    border-left: 4px solid #3b82f6;
+    border-radius: 6px;
+    margin: 2em 0;
+  }
+  
+  .news-quote p {
+    margin: 0;
+    font-style: italic;
+    color: #111827;
+    line-height: 1.7;
+  }
+  
+  .news-button {
+    display: inline-block;
+    padding: 0.6em 1.5em;
+    color: #3b82f6;
+    text-decoration: none;
+    border: 1px solid #3b82f6;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.9em;
+    transition: all 0.3s ease;
+    margin-top: 1em;
+  }
+  
+  .news-button:hover {
+    background: #3b82f6;
+    color: white;
+  }
+  
+  .empty-state {
+    padding: 3em 2em;
+    text-align: center;
+    color: #6b7280;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .news-card {
+      padding: 1.5em;
+    }
+    
+    .news-title {
+      font-size: 1.3em;
+    }
+  }
+</style>
 
-<!-- News posts will appear below -->
-{% for post in site.posts %}
-    <div style="padding: 2.5em; background: white; border-radius: 8px; margin-bottom: 2.5em; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
-        <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic; font-size: 1.5em;">{{ post.title }}</h3>
-        <p style="color: #64748b; font-size: 0.95em; margin-bottom: 1.5em; font-style: italic;">
-            📅 {{ post.date | date: "%B %d, %Y" }}
-        </p>
-        <div style="color: #334155;">
-            {{ post.content }}
-        </div>
-    </div>
-{% endfor %}
+<div class="news-container">
 
-{% if site.posts.size == 0 %}
-<div style="padding: 2.5em; background: white; border-radius: 8px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
-  <p style="font-size: 1.15em; color: #64748b; margin: 0; font-style: italic;">
-    📰 News and updates will be posted here. Check back soon for the latest from our lab!
-  </p>
-</div>
+{% if site.posts.size > 0 %}
+  {% for post in site.posts %}
+    <article class="news-card">
+      <h2 class="news-title">{{ post.title }}</h2>
+      <div class="news-date">{{ post.date | date: "%B %d, %Y" }}</div>
+      <div class="news-content">
+        {{ post.content }}
+      </div>
+    </article>
+  {% endfor %}
+{% else %}
+  <div class="empty-state">
+    <p>News and updates will be posted here. Check back soon for the latest from our lab!</p>
+  </div>
 {% endif %}
 
 </div>

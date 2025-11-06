@@ -1,4 +1,4 @@
-baseurl: "/med-ai"
+baseurl: ""
 exclude: ['README.md', 'vendor', 'Gemfile', 'Gemfile.lock']
 markdown: kramdown
 future: true

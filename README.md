@@ -91,3 +91,4 @@ Edit `_data/alumni.yml` to add former lab members.
 
 © 2025 Guelph Medical AI Lab. All rights reserved.
 
+# Trigger rebuild

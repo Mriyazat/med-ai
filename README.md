@@ -1,10 +1,10 @@
-# Guelph Medical AI Lab Website
+# AI-Driven Medical Imaging & Diagnostics Lab Website
 
-Official website for the Guelph Medical AI Lab at the University of Guelph.
+Official website for the AI-Driven Medical Imaging & Diagnostics Lab at the University of Guelph.
 
 ## About
 
-This Jekyll-powered website showcases the research, publications, team members, and news from the Guelph Medical AI Lab.
+This Jekyll-powered website showcases the research, publications, team members, and news from the AI-Driven Medical Imaging & Diagnostics Lab.
 
 ## Structure
 
@@ -89,6 +89,6 @@ Edit `_data/alumni.yml` to add former lab members.
 
 ## License
 
-© 2025 Guelph Medical AI Lab. All rights reserved.
+© 2025 AI-Driven Medical Imaging & Diagnostics Lab. All rights reserved.
 
 # Trigger rebuild

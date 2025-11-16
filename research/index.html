@@ -136,6 +136,12 @@ bgimage: /images/guelph_page_header_banner.png
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
+  /* Ensure GIFs animate properly */
+  .research-image-item img[src$=".gif"] {
+    image-rendering: auto;
+    animation: none;
+  }
+  
   .research-image-item img:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0,0,0,0.12);
@@ -208,7 +214,7 @@ bgimage: /images/guelph_page_header_banner.png
         <div class="research-image-caption">Brain Segmentation Analysis</div>
       </div>
       <div class="research-image-item">
-        <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif" alt="Brain tumor slices animation">
+        <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif?t={{ site.time | date: '%s' }}" alt="Brain tumor slices animation" style="image-rendering: auto;">
         <div class="research-image-caption">Brain Tumor Segmentation (BraTS)</div>
       </div>
     </div>
@@ -221,6 +227,18 @@ bgimage: /images/guelph_page_header_banner.png
     <p>
       <strong>Medical ultrasound</strong> uses high frequency broadband sound waves in the megahertz range that are reflected by tissue to varying degrees to produce (up to 3D) images. This is commonly associated with imaging the fetus in pregnant women. Uses of ultrasound are much broader, however. Other important uses include imaging the abdominal organs, heart, breast, muscles, tendons, arteries and veins.
     </p>
+    
+    <div class="research-images-grid">
+      <div class="research-image-item">
+        <img src="{{site.baseurl}}/images/research/cosm_pelvic_floor.png" alt="Pelvic floor analysis visualization">
+        <div class="research-image-caption">Pelvic Floor Analysis</div>
+      </div>
+      <div class="research-image-item">
+        <img src="{{site.baseurl}}/images/research/example_visualization.png" alt="Medical imaging example visualization">
+        <div class="research-image-caption">Medical Imaging Visualization</div>
+      </div>
+    </div>
+    
     <p>
       While it may provide less anatomical detail than techniques such as CT or MRI, it has several advantages which make it ideal in numerous situations, in particular that it studies the function of moving structures in real-time, emits no ionizing radiation, and contains speckle that can be used in elastography. It is very safe to use and does not appear to cause any adverse effects. It is also relatively inexpensive and quick to perform. Ultrasound scanners can be taken to critically ill patients in intensive care units, avoiding the danger caused while moving the patient to the radiology department. The real-time moving image obtained can be used to guide drainage and biopsy procedures. Doppler capabilities on modern scanners allow the blood flow in arteries and veins to be assessed.
     </p>

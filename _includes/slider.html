@@ -3,13 +3,13 @@
     font-size: 1.8em;
     font-style: italic;
     white-space: nowrap;
-    padding: 0 1em;
+    margin: 0;
   }
   
   .banner-header h3 {
     font-size: 1.1em;
     font-style: italic;
-    padding: 0 1em;
+    margin: 0.5em 0 0 0;
   }
   
   @media screen and (max-width: 736px) {
@@ -51,7 +51,7 @@
         {% else %}
             <img src="{{site.baseurl}}{{slide.image}}" alt="" style="display: block; margin: 0; padding: 0; width: 100%; height: 100%; object-fit: cover;" />
         {% endif %}
-        <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 2; width: 100%; max-width: 100%;">
+        <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 2;">
             <header class="banner-header">
                 <h2><em>AI-Driven Medical Imaging & Diagnostics Lab</em></h2>
                 <h3><em>Supervised by Dr. Eran Ukwatta</em></h3>

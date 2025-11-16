@@ -106,11 +106,17 @@ bgimage: /images/guelph_page_header_banner.png
     font-style: italic;
   }
   
-  /* Style links within member bio and current project */
+  /* Style links within member bio and current project - override global styles */
   .member-bio a,
+  .member-bio * a,
   .member-bio p a,
+  .member-bio strong a,
+  .member-bio p strong a,
   .current-project-content a,
-  .current-project-content p a {
+  .current-project-content * a,
+  .current-project-content p a,
+  .current-project-content strong a,
+  .current-project-content p strong a {
     color: #2563eb !important;
     font-weight: bold !important;
     font-style: italic !important;
@@ -118,9 +124,15 @@ bgimage: /images/guelph_page_header_banner.png
   }
   
   .member-bio a:hover,
+  .member-bio * a:hover,
   .member-bio p a:hover,
+  .member-bio strong a:hover,
+  .member-bio p strong a:hover,
   .current-project-content a:hover,
-  .current-project-content p a:hover {
+  .current-project-content * a:hover,
+  .current-project-content p a:hover,
+  .current-project-content strong a:hover,
+  .current-project-content p strong a:hover {
     color: #1d4ed8 !important;
   }
   

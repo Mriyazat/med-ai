@@ -115,6 +115,39 @@ bgimage: /images/guelph_page_header_banner.png
     text-align: justify;
   }
   
+  .research-images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    margin: 2em 0;
+  }
+  
+  .research-image-item {
+    text-align: center;
+  }
+  
+  .research-image-item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .research-image-item img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.12);
+  }
+  
+  .research-image-caption {
+    margin-top: 0.8em;
+    font-size: 0.9em;
+    color: #64748b;
+    font-style: italic;
+  }
+  
   @media (max-width: 768px) {
     .research-container {
       padding: 0 1em;
@@ -154,6 +187,13 @@ bgimage: /images/guelph_page_header_banner.png
       <strong>Projectional radiographs</strong>, more commonly known as X-rays, are often used to determine the type and extent of a fracture as well as for detecting pathological changes in the lungs. With the use of radio-opaque contrast media, such as barium, they can also be used to visualize the structure of the stomach and intestines – this can help diagnose ulcers or certain types of colon cancer.
     </p>
     
+    <div class="research-images-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 2em auto;">
+      <div class="research-image-item">
+        <img src="{{site.baseurl}}/images/research/ct_neck_visualization.jpg" alt="CT scan neck visualization">
+        <div class="research-image-caption">CT Scan Multi-View Visualization</div>
+      </div>
+    </div>
+    
     <h3 class="subsection-title">Magnetic Resonance Imaging</h3>
     <p>
       A <strong>magnetic resonance imaging instrument (MRI scanner)</strong>, or "nuclear magnetic resonance (NMR) imaging" scanner as it was originally known, uses powerful magnets to polarize and excite hydrogen nuclei (i.e., single protons) of water molecules in human tissue, producing a detectable signal which is spatially encoded, resulting in images of the body. The MRI machine emits a radio frequency (RF) pulse at the resonant frequency of the hydrogen atoms on water molecules.
@@ -161,6 +201,18 @@ bgimage: /images/guelph_page_header_banner.png
     <p>
       Like CT, MRI traditionally creates a two-dimensional image of a thin "slice" of the body and is therefore considered a tomographic imaging technique. Modern MRI instruments are capable of producing images in the form of 3D blocks. Unlike CT, MRI does not involve the use of ionizing radiation and is therefore not associated with the same health hazards.
     </p>
+    
+    <div class="research-images-grid">
+      <div class="research-image-item">
+        <img src="{{site.baseurl}}/images/research/brain_segmentation_overlay.png" alt="Brain segmentation with colored overlays">
+        <div class="research-image-caption">Brain Segmentation Analysis</div>
+      </div>
+      <div class="research-image-item">
+        <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif" alt="Brain tumor slices animation">
+        <div class="research-image-caption">Brain Tumor Segmentation (BraTS)</div>
+      </div>
+    </div>
+    
     <p>
       A number of different pulse sequences can be used for specific MRI diagnostic imaging (<strong>multiparametric MRI or mpMRI</strong>). It is possible to differentiate tissue characteristics by combining two or more of the following imaging sequences: <strong>T1-weighted (T1-MRI)</strong>, <strong>T2-weighted (T2-MRI)</strong>, <strong>diffusion weighted imaging (DWI-MRI)</strong>, <strong>dynamic contrast enhancement (DCE-MRI)</strong>, and <strong>spectroscopy (MRI-S)</strong>. The number of applications of mpMRI for detecting disease in various organs continues to expand, including liver studies, breast tumors, pancreatic tumors, and assessing the effects of vascular disruption agents on cancer tumors.
     </p>

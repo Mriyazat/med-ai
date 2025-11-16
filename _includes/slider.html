@@ -1,27 +1,29 @@
 <style>
+  /* Desktop styles - keep original look */
   .banner-header h2 {
-    font-size: 1.8em;
+    font-size: 1.8em !important;
     font-style: italic;
     white-space: nowrap;
     margin: 0;
   }
   
   .banner-header h3 {
-    font-size: 1.1em;
+    font-size: 1.1em !important;
     font-style: italic;
     margin: 0.5em 0 0 0;
   }
   
+  /* Mobile styles - only apply on small screens */
   @media screen and (max-width: 736px) {
     .banner-header h2 {
-      font-size: 1.2em;
-      white-space: normal;
+      font-size: 1.2em !important;
+      white-space: normal !important;
       line-height: 1.3;
       padding: 0 0.5em;
     }
     
     .banner-header h3 {
-      font-size: 0.9em;
+      font-size: 0.9em !important;
       padding: 0 0.5em;
       margin-top: 0.5em;
     }
@@ -29,12 +31,12 @@
   
   @media screen and (max-width: 480px) {
     .banner-header h2 {
-      font-size: 1em;
+      font-size: 1em !important;
       line-height: 1.2;
     }
     
     .banner-header h3 {
-      font-size: 0.85em;
+      font-size: 0.85em !important;
     }
   }
 </style>
@@ -53,8 +55,8 @@
         {% endif %}
         <div class="inner" style="position: absolute; bottom: 3%; left: 50%; transform: translateX(-50%); text-align: center; z-index: 2;">
             <header class="banner-header">
-                <h2><em>AI-Driven Medical Imaging & Diagnostics Lab</em></h2>
-                <h3><em>Supervised by Dr. Eran Ukwatta</em></h3>
+                <h2 style="font-size: 1.8em; font-style: italic; white-space: nowrap;"><em>AI-Driven Medical Imaging & Diagnostics Lab</em></h2>
+                <h3 style="font-size: 1.1em; font-style: italic;"><em>Supervised by Dr. Eran Ukwatta</em></h3>
             </header>
         </div>
     </article>    

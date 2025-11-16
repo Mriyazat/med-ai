@@ -152,6 +152,15 @@ bgimage: /images/guelph_page_header_banner.png
     font-size: 0.9em;
     color: #64748b;
     font-style: italic;
+    line-height: 1.6;
+  }
+  
+  .research-image-caption strong {
+    font-weight: 600;
+    color: #1e293b;
+    font-style: italic;
+    display: block;
+    margin-bottom: 0.3em;
   }
   
   @media (max-width: 768px) {
@@ -196,7 +205,10 @@ bgimage: /images/guelph_page_header_banner.png
     <div class="research-images-grid" style="grid-template-columns: 1fr; max-width: 600px; margin: 2em auto;">
       <div class="research-image-item">
         <img src="{{site.baseurl}}/images/research/ct_neck_visualization.jpg" alt="CT scan neck visualization">
-        <div class="research-image-caption">CT Scan Multi-View Visualization</div>
+        <div class="research-image-caption">
+          <strong>CT Scan Multi-View Visualization</strong><br>
+          Comprehensive multi-planar reconstruction of neck anatomy for diagnostic assessment.
+        </div>
       </div>
     </div>
     
@@ -211,11 +223,17 @@ bgimage: /images/guelph_page_header_banner.png
     <div class="research-images-grid">
       <div class="research-image-item">
         <img src="{{site.baseurl}}/images/research/brain_segmentation_overlay.png" alt="Brain segmentation with colored overlays">
-        <div class="research-image-caption">Brain Segmentation Analysis</div>
+        <div class="research-image-caption">
+          <strong>Brain MRI Multi-Structure Segmentation</strong><br>
+          Deep-learning–based extraction of anatomical brain regions for neuroimaging analysis.
+        </div>
       </div>
       <div class="research-image-item">
         <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif" alt="Brain tumor slices animation" loading="eager">
-        <div class="research-image-caption">Brain Tumor Segmentation (BraTS)</div>
+        <div class="research-image-caption">
+          <strong>Brain Tumor Segmentation (BraTS Dataset)</strong><br>
+          Voxel-level tumor delineation from MRI scans for glioma detection and therapeutic planning.
+        </div>
       </div>
     </div>
     
@@ -231,11 +249,17 @@ bgimage: /images/guelph_page_header_banner.png
     <div class="research-images-grid">
       <div class="research-image-item">
         <img src="{{site.baseurl}}/images/research/cosm_pelvic_floor.png" alt="Pelvic floor analysis visualization">
-        <div class="research-image-caption">Pelvic Floor Analysis</div>
+        <div class="research-image-caption">
+          <strong>3D Pelvic Floor Reconstruction from Ultrasound</strong><br>
+          Automated segmentation and visualization of pelvic floor musculature for functional assessment.
+        </div>
       </div>
       <div class="research-image-item">
         <img src="{{site.baseurl}}/images/research/example_visualization.png" alt="Medical imaging example visualization">
-        <div class="research-image-caption">Medical Imaging Visualization</div>
+        <div class="research-image-caption">
+          <strong>Volumetric Ultrasound Visualization</strong><br>
+          High-resolution 3D rendering of anatomical structures using advanced ultrasound processing pipelines.
+        </div>
       </div>
     </div>
     

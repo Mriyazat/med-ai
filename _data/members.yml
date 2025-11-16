@@ -1,6 +1,15 @@
 # Current Lab Members
 
 members:
+  - name: "Dr. Eran Ukwatta"
+    position: "Associate Professor"
+    degree: "Principal Investigator"
+    image: "/images/members/eran_ukwatta.jpg"
+    bio: "Dr. Eran Ukwatta is an **Associate Professor** in **Biomedical Engineering** at the **University of Guelph**. He joined the **University of Guelph** as an **Assistant Professor** in 2018 and was promoted to **Associate Professor** in 2022. His research focuses on developing robust image analysis methodologies for patient-specific modeling of cardiovascular structure and function, addressing the growing need for precise and individualized computational tools in healthcare. Prior to his appointment at Guelph, Dr. Ukwatta served as an **Assistant Professor** at **Carleton University** from 2016 to 2018 and continues as an **Adjunct Professor** there. He also completed a multi-center postdoctoral fellowship in **Biomedical Engineering** at **Johns Hopkins University** (2013–2015) and **Sunnybrook Research Institute** (2014–2015). Dr. Ukwatta's research is supported by prestigious fellowships, including the **NSERC Postdoctoral Fellowship**, the **Johns Hopkins University BME Centennial Postdoctoral Fellowship**, and the **MITACS Elevate Postdoctoral Fellowship**. In addition to his research, he is actively involved in teaching and mentoring students, with expertise in **machine learning** and **biomedical imaging**."
+    linkedin: ""
+    google_scholar: ""
+    github: ""
+
   - name: "Zachary Szentimrey"
     position: "PhD Candidate"
     degree: "PhD"

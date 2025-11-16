@@ -1,6 +1,6 @@
 ---
 title: "Lab Members to Present Research at SPIE Medical Imaging Conference"
-date: 2025-02-15
+date: 2025-11-16
 ---
 
 <p style="font-size: 1.15em; color: #334155; margin-bottom: 2em; font-style: italic; line-height: 1.8;">

@@ -282,4 +282,23 @@ bgimage: /images/guelph_page_header_banner.png
   </p>
 </div>
 
+<script>
+  // Make GIF loop continuously by reloading it periodically
+  document.addEventListener('DOMContentLoaded', function() {
+    const gifImages = document.querySelectorAll('img[src$=".gif"]');
+    gifImages.forEach(function(img) {
+      const originalSrc = img.src.split('?')[0]; // Remove any existing query params
+      let frameCount = 0;
+      
+      // Reload the GIF every 3 seconds to ensure continuous looping
+      // Adjust the interval based on your GIF's actual duration
+      setInterval(function() {
+        frameCount++;
+        // Add a cache-busting parameter to force reload
+        img.src = originalSrc + '?t=' + frameCount;
+      }, 3000); // Reload every 3 seconds - adjust based on GIF duration
+    });
+  });
+</script>
+
 </div>

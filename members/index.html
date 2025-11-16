@@ -106,6 +106,24 @@ bgimage: /images/guelph_page_header_banner.png
     font-style: italic;
   }
   
+  /* Style links within member bio and current project */
+  .member-bio a,
+  .current-project-content a {
+    color: #2563eb;
+    text-decoration: underline;
+    text-decoration-color: #2563eb;
+    text-underline-offset: 2px;
+    font-weight: bold;
+    font-style: italic;
+    transition: color 0.2s ease, text-decoration-color 0.2s ease;
+  }
+  
+  .member-bio a:hover,
+  .current-project-content a:hover {
+    color: #1d4ed8;
+    text-decoration-color: #1d4ed8;
+  }
+  
   .member-social-links {
     display: flex;
     gap: 1em;

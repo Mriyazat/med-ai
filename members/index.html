@@ -108,31 +108,49 @@ bgimage: /images/guelph_page_header_banner.png
   
   /* Style links within member bio and current project - override global styles */
   .member-bio a,
+  .member-bio a:link,
+  .member-bio a:visited,
+  .member-bio a:active,
   .member-bio * a,
+  .member-bio * a:link,
+  .member-bio * a:visited,
+  .member-bio * a:active,
   .member-bio p a,
-  .member-bio strong a,
-  .member-bio p strong a,
+  .member-bio p a:link,
+  .member-bio p a:visited,
+  .member-bio p a:active,
   .current-project-content a,
+  .current-project-content a:link,
+  .current-project-content a:visited,
+  .current-project-content a:active,
   .current-project-content * a,
+  .current-project-content * a:link,
+  .current-project-content * a:visited,
+  .current-project-content * a:active,
   .current-project-content p a,
-  .current-project-content strong a,
-  .current-project-content p strong a {
+  .current-project-content p a:link,
+  .current-project-content p a:visited,
+  .current-project-content p a:active {
     color: #2563eb !important;
     font-weight: bold !important;
     font-style: italic !important;
     text-decoration: none !important;
   }
   
+  /* Ensure strong tags inside links inherit the link color */
+  .member-bio a strong,
+  .member-bio p a strong,
+  .current-project-content a strong,
+  .current-project-content p a strong {
+    color: inherit !important;
+  }
+  
   .member-bio a:hover,
   .member-bio * a:hover,
   .member-bio p a:hover,
-  .member-bio strong a:hover,
-  .member-bio p strong a:hover,
   .current-project-content a:hover,
   .current-project-content * a:hover,
-  .current-project-content p a:hover,
-  .current-project-content strong a:hover,
-  .current-project-content p strong a:hover {
+  .current-project-content p a:hover {
     color: #1d4ed8 !important;
   }
   

@@ -109,6 +109,54 @@ bgimage: /images/guelph_page_header_banner.png
     font-style: italic;
   }
   
+  .courses-section {
+    margin-top: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #f3f4f6;
+  }
+  
+  .courses-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    font-style: italic;
+    color: #111827;
+    margin-bottom: 1em;
+  }
+  
+  .course-group {
+    margin-bottom: 1.5em;
+  }
+  
+  .course-group-title {
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: italic;
+    color: #1e293b;
+    margin-bottom: 0.5em;
+  }
+  
+  .course-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .course-list li {
+    color: #475569;
+    font-style: italic;
+    line-height: 1.8;
+    padding-left: 1.2em;
+    position: relative;
+  }
+  
+  .course-list li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #2563eb;
+    font-weight: bold;
+  }
+  
   /* Bold names and important terms within italic text */
   .member-bio strong,
   .current-project-content strong {
@@ -389,6 +437,35 @@ bgimage: /images/guelph_page_header_banner.png
         <div class="current-project-section">
           <h3 class="current-project-title">Current Research Project</h3>
           <div class="current-project-content">{{ member.current_project | markdownify }}</div>
+        </div>
+      {% endif %}
+      
+      <!-- Courses -->
+      {% if member.undergraduate_courses or member.graduate_courses %}
+        <div class="courses-section">
+          <h3 class="courses-title">Courses</h3>
+          
+          {% if member.undergraduate_courses %}
+            <div class="course-group">
+              <h4 class="course-group-title">Undergraduate Courses</h4>
+              <ul class="course-list">
+                {% for course in member.undergraduate_courses %}
+                  <li>{{ course }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
+          
+          {% if member.graduate_courses %}
+            <div class="course-group">
+              <h4 class="course-group-title">Graduate Courses</h4>
+              <ul class="course-list">
+                {% for course in member.graduate_courses %}
+                  <li>{{ course }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          {% endif %}
         </div>
       {% endif %}
       

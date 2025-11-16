@@ -139,7 +139,7 @@ bgimage: /images/guelph_page_header_banner.png
   /* Ensure GIFs animate properly */
   .research-image-item img[src$=".gif"] {
     image-rendering: auto;
-    animation: none;
+    object-fit: contain;
   }
   
   .research-image-item img:hover {
@@ -214,7 +214,7 @@ bgimage: /images/guelph_page_header_banner.png
         <div class="research-image-caption">Brain Segmentation Analysis</div>
       </div>
       <div class="research-image-item">
-        <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif?t={{ site.time | date: '%s' }}" alt="Brain tumor slices animation" style="image-rendering: auto;">
+        <img src="{{site.baseurl}}/images/research/brain_tumor_slices.gif" alt="Brain tumor slices animation" loading="eager">
         <div class="research-image-caption">Brain Tumor Segmentation (BraTS)</div>
       </div>
     </div>

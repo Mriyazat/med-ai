@@ -19,6 +19,10 @@
     opacity: 0.9;
     align-items: center;
     justify-content: center;
+    line-height: 1;
+  }
+  #backToTop.show {
+    display: flex;
   }
   #backToTop:hover {
     background: #1d4ed8;
@@ -46,9 +50,9 @@
     
     function toggleButton() {
       if (window.pageYOffset > 300) {
-        backToTopButton.style.display = 'flex';
+        backToTopButton.classList.add('show');
       } else {
-        backToTopButton.style.display = 'none';
+        backToTopButton.classList.remove('show');
       }
     }
     

@@ -1,3 +1,69 @@
+<button id="backToTop" aria-label="Back to top" style="display: none; position: fixed; bottom: 2rem; right: 2rem; width: 48px; height: 48px; background: #2563eb; color: white; border: none; border-radius: 50%; cursor: pointer; box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4); transition: all 0.3s ease; z-index: 1000; font-size: 1.2em; opacity: 0.9;">
+  ↑
+</button>
+<style>
+  #backToTop {
+    display: none;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 48px;
+    height: 48px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    font-size: 1.2em;
+    opacity: 0.9;
+    align-items: center;
+    justify-content: center;
+  }
+  #backToTop:hover {
+    background: #1d4ed8;
+    opacity: 1;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(37, 99, 235, 0.5);
+  }
+  #backToTop:active {
+    transform: translateY(0);
+  }
+  @media (max-width: 768px) {
+    #backToTop {
+      bottom: 1.5rem;
+      right: 1.5rem;
+      width: 44px;
+      height: 44px;
+      font-size: 1.1em;
+    }
+  }
+</style>
+<script>
+  (function() {
+    const backToTopButton = document.getElementById('backToTop');
+    if (!backToTopButton) return;
+    
+    function toggleButton() {
+      if (window.pageYOffset > 300) {
+        backToTopButton.style.display = 'flex';
+      } else {
+        backToTopButton.style.display = 'none';
+      }
+    }
+    
+    window.addEventListener('scroll', toggleButton);
+    backToTopButton.addEventListener('click', function() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    });
+  })();
+</script>
+
 <footer id="footer">
     <div class="copyright" style="font-style: italic;">
         AI-Driven Medical Imaging & Diagnostics Lab at University of Guelph

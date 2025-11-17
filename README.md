@@ -1,94 +1,43 @@
-# AI-Driven Medical Imaging & Diagnostics Lab Website
+# AI-Driven Medical Imaging & Diagnostics Lab
 
-Official website for the AI-Driven Medical Imaging & Diagnostics Lab at the University of Guelph.
+Official website for the **AI-Driven Medical Imaging & Diagnostics Lab** at the University of Guelph.
 
-## About
+## About the Lab
 
-This Jekyll-powered website showcases the research, publications, team members, and news from the AI-Driven Medical Imaging & Diagnostics Lab.
+The AI-Driven Medical Imaging & Diagnostics Lab focuses on developing cutting-edge artificial intelligence and machine learning techniques to address critical challenges in medical imaging. Our research spans predictive health, holistic analysis, trusted AI, and generative models for healthcare applications.
 
-## Structure
+We are part of the [School of Engineering](https://www.uoguelph.ca/engineering/) at the [University of Guelph](https://www.uoguelph.ca/), Guelph, Ontario, Canada.
 
-```
-├── _data/              # Data files (members, publications, alumni, etc.)
-├── _includes/          # Reusable HTML components
-├── _layouts/           # Page layouts
-├── _posts/             # News posts
-├── assets/             # CSS, JavaScript, and fonts
-├── images/             # All images organized by category
-│   ├── logos/          # Social media and institution logos
-│   ├── members/        # Team member photos
-│   ├── posts/          # News post images
-│   ├── pub/            # Publication figures
-│   └── research/       # Research visualization images
-├── about/              # About page
-├── contact/            # Contact page
-├── favicon/            # Favicon files
-├── members/            # Members page
-├── news/               # News page
-├── openings/           # Openings page
-├── publications/       # Publications page
-└── research/           # Research page
-```
+## Research Focus
 
-## Local Development
+- **Predictive Health**: Applying deep learning for early disease detection and outcome prediction
+- **Holistic Analysis**: Integrating multi-modal data to enable comprehensive clinical insights
+- **Trusted AI**: Advancing explainable and transparent models for clinical decision support
+- **Generative AI**: Utilizing generative models for data synthesis, image enhancement, and disease simulation
 
-### Prerequisites
+## Website Features
 
-- Ruby 2.6.0 or higher
-- Bundler
+This website showcases:
 
-### Setup
+- **Research Projects**: Current and past research initiatives with visualizations and detailed descriptions
+- **Team Members**: Profiles of faculty, graduate students, and researchers
+- **Publications**: Peer-reviewed papers, conference proceedings, and research outputs
+- **News & Updates**: Latest announcements, presentations, and lab achievements
+- **Openings**: Information about available positions and how to join our team
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   bundle install
-   ```
-3. Run the development server:
-   ```bash
-   bundle exec jekyll serve
-   ```
-4. Visit `http://localhost:4000/med-ai/` in your browser
+## Contact
 
-## Building for Production
+For inquiries about research opportunities, collaborations, or general information, please contact:
 
-```bash
-bundle exec jekyll build
-```
-
-The built site will be in the `_site/` directory.
-
-## Deployment
-
-This site is configured for GitHub Pages. The base URL is set to `/med-ai` in `_config.yml`.
-
-## Adding Content
-
-### Adding a Team Member
-
-Edit `_data/members.yml` and add member photos to `images/members/`.
-
-### Adding a Publication
-
-Edit `_data/publications.yml` and add publication figures to `images/pub/`.
-
-### Adding a News Post
-
-Create a new markdown file in `_posts/` following the naming convention: `YYYY-MM-DD-title.md`
-
-### Adding Alumni
-
-Edit `_data/alumni.yml` to add former lab members.
+**Dr. Eran Ukwatta, PhD, P.Eng**  
+Associate Professor, Biomedical Engineering  
+Email: [eukwatta@uoguelph.ca](mailto:eukwatta@uoguelph.ca)  
+[Faculty Page](https://www.uoguelph.ca/engineering/people/eranga-ukwatta-phd-peng) | [ResearchGate](https://www.researchgate.net/profile/Eranga-Ukwatta) | [Google Scholar](https://scholar.google.ca/citations?user=d4Q3lWcAAAAJ&hl=en) | [LinkedIn](https://www.linkedin.com/in/eranga-ukwatta-6a318819/?originalSubdomain=ca)
 
 ## Technologies
 
-- [Jekyll](https://jekyllrb.com/) - Static site generator
-- HTML5/CSS3 - Styling
-- JavaScript - Interactivity
-- Font Awesome - Icons
+Built with [Jekyll](https://jekyllrb.com/), a static site generator, and deployed via GitHub Pages.
 
 ## License
 
-© 2025 AI-Driven Medical Imaging & Diagnostics Lab. All rights reserved.
-
-# Trigger rebuild
+© 2025 AI-Driven Medical Imaging & Diagnostics Lab at University of Guelph. All rights reserved.

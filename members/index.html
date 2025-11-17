@@ -251,37 +251,70 @@ bgimage: /images/guelph_page_header_banner.png
   
   .research-images-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+    align-items: start;
   }
   
   .research-image-item {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
   .research-image-item img {
     width: 100%;
-    max-width: 400px;
+    max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 12px;
     border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #fafafa;
   }
   
-  /* Ensure GIFs animate properly */
+  /* Ensure GIFs animate properly and are larger */
   .research-image-item img[src$=".gif"] {
     image-rendering: auto;
     object-fit: contain;
+    max-width: 600px;
+    background: #000;
   }
   
   /* Make single research images larger */
   .research-images-grid:has(.research-image-item:only-child) .research-image-item img {
-    max-width: 700px;
+    max-width: 800px;
+  }
+  
+  /* For 2 items, make them larger */
+  .research-images-grid:has(.research-image-item:nth-child(2):last-child) .research-image-item {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  /* For 3 items, use 2 columns with one spanning */
+  .research-images-grid:has(.research-image-item:nth-child(3):last-child) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .research-images-grid:has(.research-image-item:nth-child(3):last-child) .research-image-item:first-child {
+    grid-column: 1 / -1;
+  }
+  
+  /* For 4+ items, use a balanced grid */
+  .research-images-grid:has(.research-image-item:nth-child(4)) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .research-images-grid:has(.research-image-item:nth-child(5)) {
+    grid-template-columns: repeat(2, 1fr);
   }
   
   .research-image-item img:hover {
     transform: translateY(-4px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   }
   
   @media (max-width: 768px) {
@@ -296,10 +329,15 @@ bgimage: /images/guelph_page_header_banner.png
       height: 180px;
     }
     
-  .research-images-grid {
-    grid-template-columns: 1fr;
+    .research-images-grid {
+      grid-template-columns: 1fr !important;
+      gap: 1.5em;
+    }
+    
+    .research-image-item img[src$=".gif"] {
+      max-width: 100%;
+    }
   }
-}
 
 /* Alumni Styles */
 .alumni-section {

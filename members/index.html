@@ -465,7 +465,9 @@ bgimage: /images/site/guelph_page_header_banner.png
                 </a>
               {% endif %}
               {% if member.researchgate %}
-                <a href="{{ member.researchgate }}" target="_blank" title="ResearchGate" style="color: #00CCBB; font-weight: 600; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center; padding: 0.25em 0.5em; border: 1px solid #00CCBB; border-radius: 4px;">RG</a>
+                <a href="{{ member.researchgate }}" target="_blank" title="ResearchGate">
+                  <img src="{{site.baseurl}}/images/logos/icons8-researchgate-96.png" alt="ResearchGate">
+                </a>
               {% endif %}
               {% if member.github %}
                 <a href="{{ member.github }}" target="_blank" title="GitHub">

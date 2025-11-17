@@ -3939,6 +3939,7 @@ body.is-mobile .banner > article {
 #footer .copyright {
 	color: #bbb;
 	font-size: 0.9rem;
+	font-style: italic;
 	margin: 0 0 2rem 0;
 	padding: 0;
 	text-align: center;

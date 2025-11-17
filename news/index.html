@@ -205,7 +205,7 @@ bgimage: /images/site/guelph_page_header_banner.png
       <div class="share-section">
         <span class="share-label">Share:</span>
         {% assign share_url = site.url | append: site.baseurl | append: post.url %}
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="share-button" aria-label="Share on LinkedIn">
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="share-button" aria-label="Share on LinkedIn">
           <i class="fa fa-linkedin"></i>
           LinkedIn
         </a>

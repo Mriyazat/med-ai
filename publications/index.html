@@ -314,10 +314,12 @@ bgimage: /images/site/guelph_page_header_banner.png
 
       <div class="share-section">
         <span class="share-label">Share:</span>
-        {% assign share_url = pub.article_url | default: site.url | append: site.baseurl | append: '/publications' %}
-        {% assign share_title = pub.title | url_encode %}
-        {% assign share_text = pub.title | append: ' - ' | append: pub.authors | url_encode %}
-        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="share-button" aria-label="Share on LinkedIn">
+        {% if pub.article_url %}
+          {% assign share_url = pub.article_url %}
+        {% else %}
+          {% assign share_url = site.url | append: site.baseurl | append: '/publications' %}
+        {% endif %}
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | uri_escape }}" target="_blank" rel="noopener noreferrer" class="share-button" aria-label="Share on LinkedIn">
           <i class="fa fa-linkedin"></i>
           LinkedIn
         </a>

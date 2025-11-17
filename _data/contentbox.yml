@@ -3,6 +3,10 @@
   content: '
   <div style="max-width: 1300px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;">
   
+  <div style="text-align: center; margin-bottom: 3em; padding: 1.5em; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
+    <a href="/med-ai/contact" style="color: #2563eb; font-weight: 600; text-decoration: none; font-size: 1.1em; font-style: italic;">Get in Touch →</a>
+  </div>
+  
   <p style="font-size: 1em; line-height: 1.6; margin-bottom: 3em; color: #475569; text-align: center; font-style: italic;">
     We are part of the 
     <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">School of Engineering</a> 
@@ -78,10 +82,6 @@
         <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Ontario Veterinary College, University of Guelph</p>
       </div>
     </div>
-  </div>
-
-  <div style="text-align: center; margin-top: 3em; padding: 1.5em; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
-    <a href="/med-ai/contact" style="color: #2563eb; font-weight: 600; text-decoration: none; font-size: 1.1em;">Get in Touch →</a>
   </div>
   
   </div>

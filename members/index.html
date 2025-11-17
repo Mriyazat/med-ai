@@ -447,7 +447,7 @@ bgimage: /images/site/guelph_page_header_banner.png
           <div class="member-bio">{{ member.bio | markdownify }}</div>
           
           <!-- Social Links -->
-          {% if member.linkedin or member.google_scholar or member.github or member.orcid or member.website %}
+          {% if member.linkedin or member.google_scholar or member.github or member.orcid or member.researchgate or member.website %}
             <div class="member-social-links">
               {% if member.website %}
                 <a href="{{ member.website }}" target="_blank" title="Faculty Page">
@@ -463,6 +463,9 @@ bgimage: /images/site/guelph_page_header_banner.png
                 <a href="{{ member.google_scholar }}" target="_blank" title="Google Scholar">
                   <img src="{{site.baseurl}}/images/logos/gscholar_logo.svg" alt="Google Scholar">
                 </a>
+              {% endif %}
+              {% if member.researchgate %}
+                <a href="{{ member.researchgate }}" target="_blank" title="ResearchGate" style="color: #00CCBB; font-weight: 600; text-decoration: none; font-size: 0.9em; display: inline-flex; align-items: center; padding: 0.25em 0.5em; border: 1px solid #00CCBB; border-radius: 4px;">RG</a>
               {% endif %}
               {% if member.github %}
                 <a href="{{ member.github }}" target="_blank" title="GitHub">

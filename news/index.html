@@ -140,6 +140,47 @@ bgimage: /images/site/guelph_page_header_banner.png
     font-style: italic;
   }
 
+  .share-section {
+    margin-top: 1.5em;
+    padding-top: 1.5em;
+    border-top: 1px solid #f3f4f6;
+    display: flex;
+    align-items: center;
+    gap: 0.75em;
+  }
+
+  .share-label {
+    font-size: 0.9em;
+    color: #6b7280;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .share-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    padding: 0.5em 1em;
+    background: #0077b5;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.9em;
+    font-weight: 600;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-style: italic;
+  }
+
+  .share-button:hover {
+    background: #005885;
+    transform: translateY(-1px);
+    color: white;
+  }
+
+  .share-button i {
+    font-size: 1.1em;
+  }
+
   @media (max-width: 768px) {
     .news-card {
       padding: 1.5em;
@@ -160,6 +201,14 @@ bgimage: /images/site/guelph_page_header_banner.png
       <div class="news-date">{{ post.date | date: "%B %d, %Y" }}</div>
       <div class="news-content">
         {{ post.content }}
+      </div>
+      <div class="share-section">
+        <span class="share-label">Share:</span>
+        {% assign share_url = site.url | append: site.baseurl | append: post.url %}
+        <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ share_url | url_encode }}" target="_blank" rel="noopener noreferrer" class="share-button" aria-label="Share on LinkedIn">
+          <i class="fa fa-linkedin"></i>
+          LinkedIn
+        </a>
       </div>
     </article>
   {% endfor %}

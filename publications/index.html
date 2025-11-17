@@ -193,23 +193,16 @@ bgimage: /images/site/guelph_page_header_banner.png
 
     <article class="publication-card">
 
-      <!-- Title -->
       <h2 class="pub-title">
         <a href="{{ pub.article_url }}" target="_blank">{{ pub.title }}</a>
       </h2>
-
-      <!-- Authors -->
       <div class="pub-authors">{{ pub.authors }}</div>
-
-      <!-- Meta Information -->
       <div class="pub-meta">
         <span class="pub-journal">{{ pub.journal }}</span>, <span class="pub-year">{{ pub.year }}</span>
         {% if pub.doi %}
         <br><a href="{{ pub.doi }}" target="_blank" style="color: #3b82f6; text-decoration: none;">{{ pub.doi | remove: 'https://doi.org/' }}</a>
         {% endif %}
       </div>
-
-      <!-- Image -->
       {% if pub.image %}
       <div class="pub-image-container">
         <img src="{{site.baseurl}}{{ pub.image }}" alt="{{ pub.title }}" class="pub-image">
@@ -218,8 +211,6 @@ bgimage: /images/site/guelph_page_header_banner.png
         {% endif %}
       </div>
       {% endif %}
-
-      <!-- Abstract Sections -->
       {% if pub.abstract_sections %}
         <div class="abstract-section">
 
@@ -260,8 +251,6 @@ bgimage: /images/site/guelph_page_header_banner.png
 
         </div>
       {% endif %}
-
-      <!-- Key Statistics -->
       {% if pub.key_stats %}
         <div class="key-stats">
           {% for stat in pub.key_stats %}
@@ -278,8 +267,6 @@ bgimage: /images/site/guelph_page_header_banner.png
     <p>Publications will be listed here.</p>
   </div>
 {% endif %}
-
-<!-- Google Scholar Link -->
 <div class="scholar-link">
   <p style="color: #6b7280; margin-bottom: 1em;">For a complete list of publications</p>
   <a href="https://scholar.google.ca/citations?hl=en&user=d4Q3lWcAAAAJ&view_op=list_works&sortby=pubdate" target="_blank">

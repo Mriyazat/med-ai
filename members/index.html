@@ -538,14 +538,10 @@ bgimage: /images/site/guelph_page_header_banner.png
 {% if site.data.alumni %}
 <div class="alumni-section">
   <h2 class="alumni-section-title">Alumni</h2>
-
-  <!-- Graduate Students -->
   {% if site.data.alumni.graduate_students %}
     {% assign phd_students = site.data.alumni.graduate_students | where: "degree", "PhD" %}
     {% assign masc_students = site.data.alumni.graduate_students | where: "degree", "MASc" %}
     {% assign meng_students = site.data.alumni.graduate_students | where: "degree", "MEng" %}
-
-    <!-- PhD Students -->
     {% if phd_students.size > 0 %}
       <div class="alumni-group">
         <h3 class="alumni-group-title">PhD Graduates</h3>

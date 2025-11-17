@@ -279,6 +279,33 @@ bgimage: /images/guelph_page_header_banner.png
     max-width: 700px;
   }
   
+  /* Special layout for Mohammadreza's 4 research images */
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-images-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1em 2em;
+    align-items: start;
+  }
+  
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(1),
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(2) {
+    max-width: 100%;
+  }
+  
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(1) img,
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(2) img {
+    max-width: 100%;
+  }
+  
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(3),
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(4) {
+    max-width: 100%;
+  }
+  
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(3) img,
+  .research-images-section:has(img[src*="mohammadreza_brats_slices"]) .research-image-item:nth-child(4) img {
+    max-width: 100%;
+  }
+  
   .research-image-item img:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);

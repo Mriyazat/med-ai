@@ -2,10 +2,10 @@
   title: '<strong><em>Welcome to the AI-Driven Medical Imaging & Diagnostics Lab</em></strong>'
   content: '
   <div style="max-width: 1300px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, ''Segoe UI'', Roboto, sans-serif;">
-  
+
   <p style="font-size: 1em; line-height: 1.6; margin-bottom: 3em; color: #475569; text-align: center; font-style: italic;">
-    We are part of the 
-    <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">School of Engineering</a> 
+    We are part of the
+    <a href="https://www.uoguelph.ca/engineering/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">School of Engineering</a>
     at the
     <a href="https://www.uoguelph.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; border-bottom: 1px solid #93c5fd;">University of Guelph</a>, Guelph, Ontario, Canada.
   </p>
@@ -14,23 +14,23 @@
     <p style="font-size: 1.4em; line-height: 1.8; margin-bottom: 1.5em; color: #334155; text-align: center; max-width: 900px; margin-left: auto; margin-right: auto; font-weight: 700; font-style: italic;">
       We develop AI solutions for healthcare to enable early diagnosis.
     </p>
-    
+
     <div style="display: flex; flex-direction: column; gap: 1.5em; margin-top: 0; max-width: 800px; margin-left: auto; margin-right: auto;">
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
         <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🎯 Predictive Health:</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Applying deep learning for early disease detection and outcome prediction.</p>
       </div>
-      
+
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
         <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🔬 Holistic Analysis:</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Integrating multi-modal data to enable comprehensive clinical insights.</p>
       </div>
-      
+
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
         <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">✓ Trusted AI:</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Advancing explainable and transparent models for clinical decision support.</p>
       </div>
-      
+
       <div style="padding: 2em; background: white; border-radius: 8px; border: 1px solid #e2e8f0; box-shadow: 0 4px 12px rgba(0,0,0,0.06); transition: transform 0.3s, box-shadow 0.3s; text-align: center;">
         <h3 style="color: #0f172a; font-size: 1.25em; margin: 0 0 1em 0; font-weight: 700; font-style: italic;">🤖 Generative AI:</h3>
         <p style="color: #64748b; line-height: 1.7; margin: 0; font-style: italic; font-size: 0.95em;">Utilizing generative models for data synthesis, image enhancement, and disease simulation.</p>
@@ -83,6 +83,6 @@
   <div style="text-align: center; margin-top: 3em; padding: 1.5em; background: #f8fafc; border-radius: 8px; border: 1px solid #e2e8f0;">
     <a href="/med-ai/contact" style="color: #2563eb; font-weight: 600; text-decoration: none; font-size: 1.1em; font-style: italic;">Get in Touch →</a>
   </div>
-  
+
   </div>
 '

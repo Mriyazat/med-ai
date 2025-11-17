@@ -11,7 +11,7 @@ bgimage: /images/site/guelph_page_header_banner.png
     margin: 0 auto;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
-  
+
   .publication-card {
     background: white;
     border: 1px solid #e5e7eb;
@@ -20,11 +20,11 @@ bgimage: /images/site/guelph_page_header_banner.png
     margin-bottom: 2em;
     transition: border-color 0.3s ease;
   }
-  
+
   .publication-card:hover {
     border-color: #3b82f6;
   }
-  
+
   .pub-title {
     font-size: 1.4em;
     font-weight: 700;
@@ -33,17 +33,17 @@ bgimage: /images/site/guelph_page_header_banner.png
     margin-bottom: 0.5em;
     color: #111827;
   }
-  
+
   .pub-title a {
     color: #111827;
     text-decoration: none;
     transition: color 0.3s ease;
   }
-  
+
   .pub-title a:hover {
     color: #3b82f6;
   }
-  
+
   .pub-authors {
     color: #374151;
     font-size: 1em;
@@ -52,7 +52,7 @@ bgimage: /images/site/guelph_page_header_banner.png
     font-weight: bold;
     font-style: italic;
   }
-  
+
   .pub-meta {
     font-size: 0.95em;
     color: #6b7280;
@@ -60,17 +60,17 @@ bgimage: /images/site/guelph_page_header_banner.png
     padding-bottom: 1.5em;
     border-bottom: 1px solid #f3f4f6;
   }
-  
+
   .pub-journal {
     font-style: italic;
     color: #111827;
   }
-  
+
   .pub-year {
     font-style: italic;
     color: #111827;
   }
-  
+
   .pub-image {
     width: 100%;
     max-width: 700px;
@@ -80,12 +80,12 @@ bgimage: /images/site/guelph_page_header_banner.png
     margin: 1.5em auto;
     display: block;
   }
-  
+
   .pub-image-container {
     text-align: center;
     margin: 2em 0;
   }
-  
+
   .image-caption {
     font-size: 0.85em;
     color: #6b7280;
@@ -93,15 +93,15 @@ bgimage: /images/site/guelph_page_header_banner.png
     margin-top: 0.5em;
     margin-bottom: 1.5em;
   }
-  
+
   .abstract-section {
     margin-top: 1em;
   }
-  
+
   .abstract-item {
     margin-bottom: 1.2em;
   }
-  
+
   .abstract-label {
     font-weight: 600;
     color: #111827;
@@ -110,14 +110,14 @@ bgimage: /images/site/guelph_page_header_banner.png
     letter-spacing: 0.05em;
     margin-bottom: 0.4em;
   }
-  
+
   .abstract-text {
     color: #4b5563;
     font-size: 0.95em;
     line-height: 1.7;
     text-align: justify;
   }
-  
+
   .key-stats {
     display: flex;
     gap: 1em;
@@ -126,7 +126,7 @@ bgimage: /images/site/guelph_page_header_banner.png
     padding-top: 1.5em;
     border-top: 1px solid #f3f4f6;
   }
-  
+
   .stat-item {
     background: #f9fafb;
     padding: 0.8em 1.2em;
@@ -135,18 +135,18 @@ bgimage: /images/site/guelph_page_header_banner.png
     color: #374151;
     border: 1px solid #e5e7eb;
   }
-  
+
   .stat-value {
     font-weight: 700;
     color: #111827;
   }
-  
+
   .scholar-link {
     text-align: center;
     margin-top: 3em;
     padding: 2em;
   }
-  
+
   .scholar-link p {
     color: #6b7280;
     font-size: 0.95em;
@@ -154,7 +154,7 @@ bgimage: /images/site/guelph_page_header_banner.png
     font-weight: bold;
     font-style: italic;
   }
-  
+
   .scholar-link a {
     display: inline-block;
     padding: 0.6em 1.5em;
@@ -165,20 +165,20 @@ bgimage: /images/site/guelph_page_header_banner.png
     font-size: 0.95em;
     transition: color 0.3s ease;
   }
-  
+
   .scholar-link a:hover {
     color: #3b82f6;
   }
-  
+
   @media (max-width: 768px) {
     .publication-card {
       padding: 1.5em;
     }
-    
+
     .pub-title {
       font-size: 1.2em;
     }
-    
+
     .pub-meta {
       flex-direction: column;
       gap: 0.5em;
@@ -190,17 +190,17 @@ bgimage: /images/site/guelph_page_header_banner.png
 
 {% if site.data.publications.publications %}
   {% for pub in site.data.publications.publications %}
-    
+
     <article class="publication-card">
-      
+
       <!-- Title -->
       <h2 class="pub-title">
         <a href="{{ pub.article_url }}" target="_blank">{{ pub.title }}</a>
       </h2>
-      
+
       <!-- Authors -->
       <div class="pub-authors">{{ pub.authors }}</div>
-      
+
       <!-- Meta Information -->
       <div class="pub-meta">
         <span class="pub-journal">{{ pub.journal }}</span>, <span class="pub-year">{{ pub.year }}</span>
@@ -208,7 +208,7 @@ bgimage: /images/site/guelph_page_header_banner.png
         <br><a href="{{ pub.doi }}" target="_blank" style="color: #3b82f6; text-decoration: none;">{{ pub.doi | remove: 'https://doi.org/' }}</a>
         {% endif %}
       </div>
-      
+
       <!-- Image -->
       {% if pub.image %}
       <div class="pub-image-container">
@@ -218,49 +218,49 @@ bgimage: /images/site/guelph_page_header_banner.png
         {% endif %}
       </div>
       {% endif %}
-      
+
       <!-- Abstract Sections -->
       {% if pub.abstract_sections %}
         <div class="abstract-section">
-          
+
           {% if pub.abstract_sections.background %}
           <div class="abstract-item">
             <div class="abstract-label">Background</div>
             <div class="abstract-text">{{ pub.abstract_sections.background }}</div>
           </div>
           {% endif %}
-          
+
           {% if pub.abstract_sections.purpose %}
           <div class="abstract-item">
             <div class="abstract-label">Purpose</div>
             <div class="abstract-text">{{ pub.abstract_sections.purpose }}</div>
           </div>
           {% endif %}
-          
+
           {% if pub.abstract_sections.methods %}
           <div class="abstract-item">
             <div class="abstract-label">Methods</div>
             <div class="abstract-text">{{ pub.abstract_sections.methods }}</div>
           </div>
           {% endif %}
-          
+
           {% if pub.abstract_sections.results %}
           <div class="abstract-item">
             <div class="abstract-label">Results</div>
             <div class="abstract-text">{{ pub.abstract_sections.results }}</div>
           </div>
           {% endif %}
-          
+
           {% if pub.abstract_sections.conclusions %}
           <div class="abstract-item">
             <div class="abstract-label">Conclusions</div>
             <div class="abstract-text">{{ pub.abstract_sections.conclusions }}</div>
           </div>
           {% endif %}
-          
+
         </div>
       {% endif %}
-      
+
       <!-- Key Statistics -->
       {% if pub.key_stats %}
         <div class="key-stats">
@@ -269,9 +269,9 @@ bgimage: /images/site/guelph_page_header_banner.png
           {% endfor %}
         </div>
       {% endif %}
-      
+
     </article>
-    
+
   {% endfor %}
 {% else %}
   <div style="padding: 2em; text-align: center; color: #6b7280;">

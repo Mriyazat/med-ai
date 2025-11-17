@@ -39,9 +39,8 @@ members:
       - "/images/research/2.png"
       - "/images/research/13.png"
       - "/images/research/3.png"
-    linkedin: ""
-    google_scholar: ""
-    github: ""
+    linkedin: "https://www.linkedin.com/in/mriyazat/"
+    github: "https://github.com/Mriyazat"
 
   - name: "Zinah Ghulam"
     position: "MASc Candidate"

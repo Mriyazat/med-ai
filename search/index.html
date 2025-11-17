@@ -1,0 +1,318 @@
+---
+layout: pages
+title: Search Results
+group: search
+bgimage: /images/site/guelph_page_header_banner.png
+---
+
+<div style="max-width: 1000px; margin: 0 auto; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; padding: 2em 1em;">
+  <div id="search-results-container">
+    <div style="margin-bottom: 2em;">
+      <form action="{{site.baseurl}}/search" method="get" class="search-form-page">
+        <div style="display: flex; gap: 0.5em; max-width: 600px; margin: 0 auto;">
+          <input type="text" name="q" id="search-query" value="" placeholder="Search publications, news, members..." class="search-input-page" autocomplete="off" autofocus>
+          <button type="submit" class="search-button-page" aria-label="Search">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </div>
+      </form>
+    </div>
+
+    <div id="search-results">
+      <p style="text-align: center; color: #64748b; font-style: italic; font-size: 1.1em;">Enter a search term above to find publications, news, members, and more.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.search-form-page {
+  margin-bottom: 2em;
+}
+
+.search-input-page {
+  flex: 1;
+  padding: 0.75em 1em;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.search-input-page:focus {
+  outline: none;
+  border-color: #2563eb;
+}
+
+.search-button-page {
+  padding: 0.75em 1.5em;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.search-button-page:hover {
+  background: #1d4ed8;
+}
+
+.search-result-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1.5em;
+  margin-bottom: 1.5em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-result-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.search-result-type {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  background: #e0e7ff;
+  color: #4338ca;
+  border-radius: 4px;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 0.75em;
+  font-style: italic;
+}
+
+.search-result-title {
+  font-size: 1.3em;
+  font-weight: 700;
+  font-style: italic;
+  color: #111827;
+  margin-bottom: 0.5em;
+}
+
+.search-result-title a {
+  color: #111827;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.search-result-title a:hover {
+  color: #2563eb;
+}
+
+.search-result-snippet {
+  color: #374151;
+  line-height: 1.7;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
+.search-result-meta {
+  color: #6b7280;
+  font-size: 0.9em;
+  margin-top: 0.75em;
+  font-style: italic;
+}
+
+.search-highlight {
+  background: #fef3c7;
+  padding: 0.1em 0.2em;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+.no-results {
+  text-align: center;
+  padding: 3em 1em;
+  color: #64748b;
+  font-style: italic;
+}
+
+.no-results h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+  color: #374151;
+}
+
+.search-stats {
+  color: #6b7280;
+  font-style: italic;
+  margin-bottom: 1.5em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #e5e7eb;
+}
+</style>
+
+<script>
+(function() {
+  const urlParams = new URLSearchParams(window.location.search);
+  const query = urlParams.get('q');
+  
+  if (!query) {
+    return;
+  }
+
+  document.getElementById('search-query').value = query;
+  
+  const searchData = {
+    publications: [
+      {% for pub in site.data.publications.publications %}
+      {
+        title: {{ pub.title | jsonify }},
+        authors: {{ pub.authors | jsonify }},
+        journal: {{ pub.journal | jsonify }},
+        year: {{ pub.year | jsonify }},
+        url: "{{site.baseurl}}/publications"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    members: [
+      {% for member in site.data.members.members %}
+      {
+        name: {{ member.name | jsonify }},
+        position: {{ member.position | jsonify }},
+        bio: {{ member.bio | markdownify | strip_html | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ],
+    news: [
+      {% for post in site.posts %}
+      {
+        title: {{ post.title | jsonify }},
+        content: {{ post.content | markdownify | strip_html | jsonify }},
+        date: "{{ post.date | date: "%B %d, %Y" }}",
+        url: "{{site.baseurl}}{{ post.url }}"
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]
+  };
+
+  function highlightText(text, query) {
+    if (!query) return text;
+    const regex = new RegExp(`(${query})`, 'gi');
+    return text.replace(regex, '<span class="search-highlight">$1</span>');
+  }
+
+  function searchContent(data, query) {
+    const results = [];
+    const lowerQuery = query.toLowerCase();
+
+    data.publications.forEach(pub => {
+      const titleMatch = pub.title.toLowerCase().includes(lowerQuery);
+      const authorsMatch = pub.authors.toLowerCase().includes(lowerQuery);
+      const journalMatch = pub.journal.toLowerCase().includes(lowerQuery);
+      
+      if (titleMatch || authorsMatch || journalMatch) {
+        let snippet = '';
+        if (titleMatch) snippet = pub.title;
+        else if (authorsMatch) snippet = pub.authors;
+        else snippet = pub.journal;
+        
+        results.push({
+          type: 'publication',
+          title: pub.title,
+          snippet: snippet,
+          meta: `${pub.authors} • ${pub.journal} (${pub.year})`,
+          url: pub.url
+        });
+      }
+    });
+
+    data.members.forEach(member => {
+      const nameMatch = member.name.toLowerCase().includes(lowerQuery);
+      const positionMatch = member.position.toLowerCase().includes(lowerQuery);
+      const bioMatch = member.bio.toLowerCase().includes(lowerQuery);
+      
+      if (nameMatch || positionMatch || bioMatch) {
+        let snippet = member.bio.substring(0, 200);
+        if (bioMatch) {
+          const index = member.bio.toLowerCase().indexOf(lowerQuery);
+          const start = Math.max(0, index - 50);
+          snippet = '...' + member.bio.substring(start, start + 200) + '...';
+        }
+        
+        results.push({
+          type: 'member',
+          title: member.name,
+          snippet: snippet,
+          meta: member.position,
+          url: "{{site.baseurl}}/members"
+        });
+      }
+    });
+
+    data.news.forEach(news => {
+      const titleMatch = news.title.toLowerCase().includes(lowerQuery);
+      const contentMatch = news.content.toLowerCase().includes(lowerQuery);
+      
+      if (titleMatch || contentMatch) {
+        let snippet = '';
+        if (titleMatch) {
+          snippet = news.content.substring(0, 200);
+        } else {
+          const index = news.content.toLowerCase().indexOf(lowerQuery);
+          const start = Math.max(0, index - 50);
+          snippet = '...' + news.content.substring(start, start + 200) + '...';
+        }
+        
+        results.push({
+          type: 'news',
+          title: news.title,
+          snippet: snippet,
+          meta: news.date,
+          url: news.url
+        });
+      }
+    });
+
+    return results;
+  }
+
+  function displayResults(results, query) {
+    const container = document.getElementById('search-results');
+    
+    if (results.length === 0) {
+      container.innerHTML = `
+        <div class="no-results">
+          <h3>No results found</h3>
+          <p>Try different keywords or check your spelling.</p>
+        </div>
+      `;
+      return;
+    }
+
+    const typeLabels = {
+      publication: 'Publication',
+      member: 'Member',
+      news: 'News'
+    };
+
+    let html = `<div class="search-stats">Found ${results.length} result${results.length !== 1 ? 's' : ''} for "${query}"</div>`;
+    
+    results.forEach(result => {
+      html += `
+        <div class="search-result-item">
+          <span class="search-result-type">${typeLabels[result.type]}</span>
+          <div class="search-result-title">
+            <a href="${result.url}">${highlightText(result.title, query)}</a>
+          </div>
+          <div class="search-result-snippet">${highlightText(result.snippet, query)}</div>
+          <div class="search-result-meta">${result.meta}</div>
+        </div>
+      `;
+    });
+
+    container.innerHTML = html;
+  }
+
+  const results = searchContent(searchData, query);
+  displayResults(results, query);
+})();
+</script>
+

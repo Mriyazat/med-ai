@@ -10,6 +10,14 @@
                                         <a href="{{site.baseurl}}{{link.link}}" alt="{{link.name}}">{{link.name}}</a>
                                     {% endif %}
                                 {% endfor %}
+                                <div class="search-container">
+                                    <form action="{{site.baseurl}}/search" method="get" class="search-form">
+                                        <input type="text" name="q" id="search-input" placeholder="Search..." class="search-input" autocomplete="off">
+                                        <button type="submit" class="search-button" aria-label="Search">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
                         </div>
                       </div>
                       <div class="navNarrow">
@@ -22,7 +30,95 @@
                                         <a href="{{site.baseurl}}{{link.link}}" alt="{{link.name}}">{{link.name}}</a>
                                     {% endif %}
                                 {% endfor %}
+                                <div class="search-container-mobile">
+                                    <form action="{{site.baseurl}}/search" method="get" class="search-form">
+                                        <input type="text" name="q" id="search-input-mobile" placeholder="Search..." class="search-input" autocomplete="off">
+                                        <button type="submit" class="search-button" aria-label="Search">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </form>
+                                </div>
                         </div>
                       </div>
                     </nav>
             </header>
+<style>
+.search-container {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 1em;
+}
+
+.search-container-mobile {
+    margin-top: 1em;
+    padding-top: 1em;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.search-input {
+    padding: 0.5em 1em;
+    padding-right: 2.5em;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-size: 0.9em;
+    width: 200px;
+    transition: all 0.3s ease;
+}
+
+.search-input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: rgba(255, 255, 255, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+    width: 250px;
+}
+
+.search-button {
+    position: absolute;
+    right: 0.5em;
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    padding: 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0.3s ease;
+}
+
+.search-button:hover {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .search-container {
+        display: none;
+    }
+    
+    .search-input {
+        width: 100%;
+    }
+    
+    .search-input:focus {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+    .search-container-mobile {
+        display: none;
+    }
+}
+</style>

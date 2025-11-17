@@ -268,6 +268,12 @@ bgimage: /images/guelph_page_header_banner.png
     transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
+  /* Ensure GIFs animate properly */
+  .research-image-item img[src$=".gif"] {
+    image-rendering: auto;
+    object-fit: contain;
+  }
+  
   /* Make single research images larger */
   .research-images-grid:has(.research-image-item:only-child) .research-image-item img {
     max-width: 700px;
@@ -476,7 +482,11 @@ bgimage: /images/guelph_page_header_banner.png
           <div class="research-images-grid">
             {% for image in member.research_images %}
               <div class="research-image-item">
-                <img src="{{site.baseurl}}{{ image }}" alt="{{ member.name }} research image {{ forloop.index }}">
+                {% if image contains '.gif' %}
+                  <img src="{{site.baseurl}}{{ image }}" alt="{{ member.name }} research image {{ forloop.index }}" loading="eager">
+                {% else %}
+                  <img src="{{site.baseurl}}{{ image }}" alt="{{ member.name }} research image {{ forloop.index }}">
+                {% endif %}
               </div>
             {% endfor %}
           </div>
@@ -605,3 +615,22 @@ bgimage: /images/guelph_page_header_banner.png
 {% endif %}
 
 </div>
+
+<script>
+  // Make GIF loop continuously by reloading it periodically
+  document.addEventListener('DOMContentLoaded', function() {
+    const gifImages = document.querySelectorAll('img[src$=".gif"]');
+    gifImages.forEach(function(img) {
+      const originalSrc = img.src.split('?')[0]; // Remove any existing query params
+      let frameCount = 0;
+      
+      // Reload the GIF every 3 seconds to ensure continuous looping
+      // Adjust the interval based on your GIF's actual duration
+      setInterval(function() {
+        frameCount++;
+        // Add a cache-busting parameter to force reload
+        img.src = originalSrc + '?t=' + frameCount;
+      }, 3000); // Reload every 3 seconds - adjust based on GIF duration
+    });
+  });
+</script>

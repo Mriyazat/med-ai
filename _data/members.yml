@@ -42,6 +42,19 @@ members:
     linkedin: "https://www.linkedin.com/in/mriyazat/"
     github: "https://github.com/Mriyazat"
 
+  - name: "Puja Saha"
+    position: "MASc Student"
+    degree: "MASc"
+    image: "/images/members/Puja.png"
+    bio: "Puja is a **MASc student** in **Computer Engineering** at the **University of Guelph**, specializing in **privacy-preserving AI, federated learning**, and **3D medical image segmentation**. She is also a **Data Scientist** at [**mlHealth360**](https://mlhealth360.com/), where she focuses on developing **AI technologies** to optimize and enhance **radiology workflows**. During her master's research, Puja developed an **Adaptive Differentially Private Federated Learning (ADP-FL)** approach to minimize **privacy–utility trade-offs** in **DP-FL** for **medical image segmentation**. ADP-FL demonstrated substantial improvements across benchmark datasets, including **KiTS23, BraTS24, HAM10K**, and **FeTS24**, achieving significant **Dice score gains**, enhanced **convergence stability**, and improved **learning efficiency** compared with conventional **DP-FL** at the same privacy budget. Evaluation on real institutional datasets such as **FeTS24** highlights its potential for **collaborative AI development** across hospitals while maintaining **robustness** and supporting **sustainable model refinement**. At **mlHealth360**, Puja contributes to the development of the **AI-enabled Radiology Assistant** by designing **deep learning pipelines** for **X-ray, CT, and MRI data**, supporting **disease detection** and **automated report generation** to improve efficiency in hospitals. Her research interests include **optimization, multimodal AI, decentralized learning, AI security**, and **generative AI for healthcare**."
+    research_images:
+      - "/images/research/Puja.png"
+    linkedin: "https://www.linkedin.com/in/puja-urmi-saha/"
+    google_scholar: "https://scholar.google.com/citations?user=74kQrh0AAAAJ&hl=en"
+    github: "https://github.com/puja-urmi"
+    website: "https://puja-urmi.github.io/"
+    website: "https://puja-urmi.github.io/"
+
   - name: "Zinah Ghulam"
     position: "MASc Candidate"
     degree: "MASc"

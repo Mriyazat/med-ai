@@ -442,9 +442,15 @@ bgimage: /images/site/guelph_page_header_banner.png
           {% if member.linkedin or member.google_scholar or member.github or member.orcid or member.researchgate or member.website %}
             <div class="member-social-links">
               {% if member.website %}
+                {% if member.website contains 'github.io' or member.website contains 'github.com' %}
+              <a href="{{ member.website }}" target="_blank" title="Personal Website">
+                <img src="{{site.baseurl}}/images/logos/github_logo.svg" alt="Personal Website">
+              </a>
+                {% else %}
               <a href="{{ member.website }}" target="_blank" title="Faculty Page">
                 <img src="{{site.baseurl}}/images/logos/university-of-guelph-logo.svg" alt="University of Guelph">
               </a>
+                {% endif %}
               {% endif %}
               {% if member.linkedin %}
               <a href="{{ member.linkedin }}" target="_blank" title="LinkedIn">

@@ -86,3 +86,17 @@ members:
     linkedin: "https://www.linkedin.com/in/pramit-dutta/?originalSubdomain=bd"
     google_scholar: "https://scholar.google.com/citations?hl=en&user=jfOjIKsAAAAJ&view_op=list_works&sortby=pubdate"
     github: "https://github.com/PramitDutta1999"
+
+recent_graduates:
+  - name: "Dr. Negin Piran Nanekaran"
+    position: "Recent PhD Graduate"
+    degree: "PhD"
+    image: "/images/members/negin_piran.png"
+    bio: "Negin recently completed her **PhD** in **Biomedical Engineering** at the **University of Guelph** under the supervision of **Dr. Eran Ukwatta**. Her research focused on the intersection of **artificial intelligence, medical imaging**, and **predictive oncology**—specifically how **deep learning** and **federated learning** can improve **prostate cancer diagnosis** and **treatment planning**. She is particularly interested in developing **scalable, privacy-preserving AI frameworks** that enable **multi-institutional collaboration** without compromising patient confidentiality. Beyond academia, after completing her **PhD**, Negin began working full-time on her **applied AI** and **software development** initiatives through her company, [**Moneli Automation**](https://moneliautomation.com/). In this role, she leads the **end-to-end design and deployment** of **intelligent automation systems** for real-world organizations. She enjoys combining academic rigor with practical impact, using AI to solve challenges across healthcare and other domains. Outside of work, she spends most of her free time with her son, Liam, as they explore new and creative ways to learn together as a family."
+    current_project: "Negin's doctoral research, titled **Deep Learning and Federated Learning for Prostate Cancer Classification and Recurrence Prediction**, addressed two critical challenges in **predictive oncology** and **collaborative medical AI**. The first component focused on developing **deep learning models** to predict **5-year biochemical recurrence** in prostate cancer patients treated with radiotherapy. Using **pre-treatment T2-weighted (T2W) MRI** and clinical data from **150 patients** at **The Ottawa Hospital**, she designed **radiomic, clinical**, and **fusion-based models**. The best-performing **early-fusion model** achieved an **AUC of 0.84**, demonstrating that combining clinical and imaging features improves prediction accuracy. The second component of the thesis introduces a novel **Federated Learning (FL) framework** for **prostate MRI classification**, addressing **data-sharing restrictions** and **inter-center heterogeneity**. The method integrates **Federated Incremental PCA (FIPCA)** with **Adaptive Early Stopping (AES)**, enabling **distributed training** while maintaining **privacy** and reducing **communication overhead**. The impact of **FIPCA** on **feature harmonization** significantly reduced the relative distance between site centroids, demonstrating alignment across centers."
+    research_images:
+      - "/images/research/negin_federated_learning_workflow.png"
+      - "/images/research/negin_feature_harmonization.png"
+    linkedin: "https://www.linkedin.com/in/neginpiran/"
+    github: "https://github.com/neginprn"
+    website: "https://moneliautomation.com/"

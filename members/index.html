@@ -539,6 +539,91 @@ bgimage: /images/site/guelph_page_header_banner.png
     <p>Lab members will be listed here.</p>
   </div>
 {% endif %}
+
+{% if site.data.members.recent_graduates %}
+<div class="alumni-section">
+  <h2 class="alumni-section-title">Recent Graduates</h2>
+  {% for graduate in site.data.members.recent_graduates %}
+    <article class="member-card">
+      <div class="member-header">
+        {% if graduate.image %}
+          <div class="member-photo">
+            <img src="{{site.baseurl}}{{ graduate.image }}" alt="{{ graduate.name }}">
+          </div>
+        {% endif %}
+        <div class="member-info">
+          <h2 class="member-name">{{ graduate.name }}</h2>
+          <div class="member-position">{{ graduate.position }}</div>
+          <div class="member-bio">{{ graduate.bio | markdownify }}</div>
+          {% if graduate.linkedin or graduate.google_scholar or graduate.github or graduate.orcid or graduate.researchgate or graduate.website %}
+            <div class="member-social-links">
+              {% if graduate.website %}
+                {% if graduate.website contains 'uoguelph.ca' %}
+              <a href="{{ graduate.website }}" target="_blank" title="Faculty Page">
+                <img src="{{site.baseurl}}/images/logos/university-of-guelph-logo.svg" alt="University of Guelph">
+              </a>
+                {% else %}
+              <a href="{{ graduate.website }}" target="_blank" title="Personal Website">
+                <img src="{{site.baseurl}}/images/logos/website_logo.svg" alt="Personal Website">
+              </a>
+                {% endif %}
+              {% endif %}
+              {% if graduate.linkedin %}
+              <a href="{{ graduate.linkedin }}" target="_blank" title="LinkedIn">
+                <img src="{{site.baseurl}}/images/logos/linkedin_logo.svg" alt="LinkedIn">
+              </a>
+              {% endif %}
+              {% if graduate.google_scholar %}
+              <a href="{{ graduate.google_scholar }}" target="_blank" title="Google Scholar">
+                <img src="{{site.baseurl}}/images/logos/gscholar_logo.svg" alt="Google Scholar">
+              </a>
+              {% endif %}
+              {% if graduate.researchgate %}
+              <a href="{{ graduate.researchgate }}" target="_blank" title="ResearchGate">
+                <img src="{{site.baseurl}}/images/logos/icons8-researchgate-96.png" alt="ResearchGate">
+              </a>
+              {% endif %}
+              {% if graduate.github %}
+              <a href="{{ graduate.github }}" target="_blank" title="GitHub">
+                <img src="{{site.baseurl}}/images/logos/github_logo.svg" alt="GitHub">
+              </a>
+              {% endif %}
+              {% if graduate.orcid %}
+              <a href="{{ graduate.orcid }}" target="_blank" title="ORCID">
+                <img src="{{site.baseurl}}/images/logos/orcid_logo.svg" alt="ORCID">
+              </a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      {% if graduate.current_project %}
+        <div class="current-project-section">
+          <h3 class="current-project-title">PhD Research</h3>
+          <div class="current-project-content">{{ graduate.current_project | markdownify }}</div>
+        </div>
+      {% endif %}
+      {% if graduate.research_images %}
+        <div class="research-images-section">
+          <h3 class="research-images-title">{{ graduate.name | split: ' ' | first }}'s Research</h3>
+          <div class="research-images-grid">
+            {% for image in graduate.research_images %}
+              <div class="research-image-item">
+                {% if image contains '.gif' %}
+                  <img src="{{site.baseurl}}{{ image }}" alt="{{ graduate.name }} research image {{ forloop.index }}" loading="eager">
+                {% else %}
+                  <img src="{{site.baseurl}}{{ image }}" alt="{{ graduate.name }} research image {{ forloop.index }}">
+                {% endif %}
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      {% endif %}
+    </article>
+  {% endfor %}
+</div>
+{% endif %}
+
 {% if site.data.alumni %}
 <div class="alumni-section">
   <h2 class="alumni-section-title">Alumni</h2>

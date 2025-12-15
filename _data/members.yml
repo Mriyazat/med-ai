@@ -37,8 +37,8 @@ members:
     research_images:
       - "/images/research/mohammadreza_brats_slices.gif"
       - "/images/research/mohammadreza_segmentation_grid.png"
-      - "/images/research/mohammadreza_brats_comparison.png"
-      - "/images/research/mohammadreza_swin_transformer_architecture.png"
+      - "/images/research/mohammadreza_brain_slice.png"
+      - "/images/research/mohammadreza_pipeline.png"
     linkedin: "https://www.linkedin.com/in/mriyazat/"
     github: "https://github.com/Mriyazat"
 

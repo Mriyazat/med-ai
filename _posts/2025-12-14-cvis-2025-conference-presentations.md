@@ -11,3 +11,8 @@ date: 2025-12-14
 The conference brings together academic and industrial research scientists to share expertise and promote the advancement and application of artificial intelligence, computer vision, and imaging technologies in various areas of academic and industrial interests.
 </p>
 
+<div style="text-align: center; margin: 2em 0;">
+  <img src="{{site.baseurl}}/images/posts/cvis_2025_mohammadreza_poster.png" alt="Mohammadreza Riyazat CVIS 2025 Poster" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+  <p style="font-size: 0.95em; color: #64748b; margin-top: 1em; font-style: italic;">Mohammadreza Riyazat's research poster for CVIS 2025</p>
+</div>
+

@@ -37,6 +37,19 @@ Our lab is participating as <strong>University of Guelph - AI-Driven Medical Ima
 The <strong>Adaptive Ensemble</strong> model employs an adaptive ensemble strategy that adjusts model weights based on detected epidemic growth patterns. The ensemble combines multiple forecasting approaches and adapts to changing disease dynamics, enabling more accurate predictions as the epidemic evolves. The model uses hospital bed occupancy data from Ontario to generate probabilistic forecasts for COVID-19, Influenza, and RSV hospitalizations.
 </p>
 
+<h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Competing Teams</h3>
+
+<p style="font-size: 1.05em; color: #334155; margin-bottom: 1em; font-style: italic; line-height: 1.8;">
+We are currently competing with some top teams in this challenge, including:
+</p>
+
+<ul style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8; padding-left: 2em;">
+  <li><strong>JHU/JHUAPL</strong> (Johns Hopkins) - 3 models including memory-enhanced versions</li>
+  <li><strong>UGuelph-CompositeCurve</strong> - Host institution</li>
+  <li><strong>UBCStat</strong> - 2 models (ARX Ensemble + Climate) in RVDSS</li>
+  <li><strong>VTSanghani-PRIME</strong> - Virginia Tech</li>
+</ul>
+
 <h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Get Involved</h3>
 
 <p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">

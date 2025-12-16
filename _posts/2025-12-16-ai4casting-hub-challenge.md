@@ -1,10 +1,10 @@
 ---
-title: "Lab to Compete in AI4Casting Hub – Hospital Bed Occupancy Forecasting Challenge"
+title: "Lab Competing in AI4Casting Hub Challenge to Forecast Hospital Bed Occupancy for Respiratory Viruses"
 date: 2025-12-16
 ---
 
 <p style="font-size: 1.15em; color: #334155; margin-bottom: 2em; font-style: italic; line-height: 1.8;">
-Our lab will compete in the <a href="https://github.com/ai4castinghub/hospitalization-forecast" style="color: #2563eb; font-weight: 500; text-decoration: none;">AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2025-2026)</a> challenge. If you want to participate and have ideas to improve our model for the competition, please contact <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
+Our lab is competing in the <a href="https://github.com/ai4castinghub/hospitalization-forecast" style="color: #2563eb; font-weight: 500; text-decoration: none;">AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2025-2026)</a> challenge, developing an adaptive ensemble model to forecast COVID-19, Influenza, and RSV hospitalizations across Ontario.
 </p>
 
 <h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Challenge Overview</h3>
@@ -37,7 +37,9 @@ Our lab is participating as <strong>University of Guelph - AI-Driven Medical Ima
 The <strong>Adaptive Ensemble</strong> model employs an adaptive ensemble strategy that adjusts model weights based on detected epidemic growth patterns. The ensemble combines multiple forecasting approaches and adapts to changing disease dynamics, enabling more accurate predictions as the epidemic evolves. The model uses hospital bed occupancy data from Ontario to generate probabilistic forecasts for COVID-19, Influenza, and RSV hospitalizations.
 </p>
 
+<h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Get Involved</h3>
+
 <p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">
-The model is being developed by <strong>Mohammadreza Riyazat</strong> from the University of Guelph. If you are interested in contributing to this project or have ideas to improve the model, please reach out to <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
+The <strong>Adaptive Ensemble</strong> model is being developed by <strong>Mohammadreza Riyazat</strong>. If you want to participate in this project or have ideas to improve our model for the competition, please reach out to <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
 </p>
 

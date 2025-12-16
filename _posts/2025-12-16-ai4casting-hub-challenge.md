@@ -27,3 +27,17 @@ These predictions will cover three major respiratory viruses:
 Predictions will be compared against confirmed hospital bed occupancy data released by <strong>Public Health Ontario's Ontario Respiratory Virus Tool</strong>. This challenge provides an opportunity to contribute to real-time decision-making and resource allocation for healthcare systems during disease outbreaks.
 </p>
 
+<h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Our Team and Model</h3>
+
+<p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">
+Our lab is participating as <strong>University of Guelph - AI-Driven Medical Imaging & Diagnostics Lab</strong> (team abbreviation: <strong>UGuelph_AIDM</strong>). We are developing the <strong>Adaptive Ensemble</strong> model (version 1.0, abbreviation: <strong>AdaptEns</strong>), an adaptive ensemble of statistical and machine learning models.
+</p>
+
+<p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">
+The <strong>Adaptive Ensemble</strong> model employs an adaptive ensemble strategy that adjusts model weights based on detected epidemic growth patterns. The ensemble combines multiple forecasting approaches and adapts to changing disease dynamics, enabling more accurate predictions as the epidemic evolves. The model uses hospital bed occupancy data from Ontario to generate probabilistic forecasts for COVID-19, Influenza, and RSV hospitalizations.
+</p>
+
+<p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">
+The model is being developed by <strong>Mohammadreza Riyazat</strong> from the University of Guelph. If you are interested in contributing to this project or have ideas to improve the model, please reach out to <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
+</p>
+

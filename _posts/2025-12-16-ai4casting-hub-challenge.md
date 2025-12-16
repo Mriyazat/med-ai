@@ -4,7 +4,7 @@ date: 2025-12-16
 ---
 
 <p style="font-size: 1.15em; color: #334155; margin-bottom: 2em; font-style: italic; line-height: 1.8;">
-Our lab will compete in the <a href="https://github.com/ai4castinghub/hospitalization-forecast" style="color: #2563eb; font-weight: 500; text-decoration: none;">AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2025-2026)</a> challenge. If you want to participate and have ideas to improve our model for the competition, please contact <strong><a href="https://www.linkedin.com/in/mriyazat/" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
+Our lab will compete in the <a href="https://github.com/ai4castinghub/hospitalization-forecast" style="color: #2563eb; font-weight: 500; text-decoration: none;">AI4Casting Hub – Hospital Bed Occupancy Data for Ontario Respiratory Virus Activity (2025-2026)</a> challenge. If you want to participate and have ideas to improve our model for the competition, please contact <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
 </p>
 
 <h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Challenge Overview</h3>

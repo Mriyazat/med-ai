@@ -40,6 +40,6 @@ The <strong>Adaptive Ensemble</strong> model employs an adaptive ensemble strate
 <h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; margin-top: 2em;">Get Involved</h3>
 
 <p style="font-size: 1.05em; color: #334155; margin-bottom: 1.5em; font-style: italic; line-height: 1.8;">
-The <strong>Adaptive Ensemble</strong> model is being developed by <strong>Mohammadreza Riyazat</strong>. If you want to participate in this project or have ideas to improve our model for the competition, please reach out to <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza Riyazat</a></strong>.
+The <strong>Adaptive Ensemble</strong> model is being developed by <strong>Mohammadreza</strong>. If you want to participate in this project or have ideas to improve our model for the competition, please reach out to <strong><a href="mailto:mriyazat@uoguelph.ca" style="color: #2563eb; font-weight: 500; text-decoration: none;">Mohammadreza</a></strong>.
 </p>
 

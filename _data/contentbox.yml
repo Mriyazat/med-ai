@@ -39,46 +39,71 @@
   </div>
 
   <div style="margin-top: 4em; padding-top: 3em; border-top: 1px solid #e2e8f0;">
-    <h3 style="color: #0f172a; margin-bottom: 2em; font-size: 1.15em; font-weight: 700; font-style: italic; text-align: center; text-transform: uppercase; letter-spacing: 0.5px;">
-      Research Partners & Collaborators:
+    <h3 style="color: #0f172a; margin-bottom: 1em; font-size: 1.3em; font-weight: 700; font-style: italic; text-align: center;">
+      Research Partners & Collaborators
     </h3>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5em; margin-bottom: 3em;">
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.ottawahospital.on.ca/en/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">The Ottawa Hospital</a>
+    
+    <!-- Industry & Commercial Partners -->
+    <div style="margin-bottom: 3em;">
+      <h4 style="color: #475569; margin-bottom: 1.5em; font-size: 1em; font-weight: 600; font-style: italic; text-align: center; text-transform: uppercase; letter-spacing: 0.5px;">
+        Industry Partners
+      </h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5em; max-width: 900px; margin: 0 auto;">
+        <div style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s;">
+          <a href="https://www.oncoustics.com/" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">Oncoustics</a>
+        </div>
+        <div style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s;">
+          <a href="https://www.cosm.care/" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">COSM Medical</a>
+        </div>
+        <div style="background: linear-gradient(135deg, #f8fafc 0%, #ffffff 100%); padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.05); transition: all 0.3s;">
+          <a href="https://ai-vali.com/" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">A.I. VALI</a>
+        </div>
       </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.mitacs.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Mitacs</a>
+    </div>
+
+    <!-- Funding & Academic Partners -->
+    <div style="margin-bottom: 3em;">
+      <h4 style="color: #475569; margin-bottom: 1.5em; font-size: 1em; font-weight: 600; font-style: italic; text-align: center; text-transform: uppercase; letter-spacing: 0.5px;">
+        Funding & Academic Partners
+      </h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5em;">
+        <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.ottawahospital.on.ca/en/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">The Ottawa Hospital</a>
+        </div>
+        <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.mitacs.ca/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Mitacs</a>
+        </div>
+        <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">NSERC</a>
+        </div>
+        <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.alliancecan.ca/en" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Digital Research Alliance of Canada</a>
+        </div>
       </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.nserc-crsng.gc.ca/index_eng.asp" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">NSERC</a>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://ai-vali.com/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">A.I. VALI</a>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.oncoustics.com/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Oncoustics</a>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.cosm.care/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">COSM Medical</a>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.alliancecan.ca/en" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Digital Research Alliance of Canada</a>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.uottawa.ca/faculty-medicine/directory/dr-nicola-schieda" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Nicola Schieda</a>
-        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Director of Abdominal and Pelvic MRI and Prostate Imaging, University of Ottawa</p>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://libin.ucalgary.ca/node/287" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. James White</a>
-        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Stephenson Cardiac Imaging Centre, Libin Cardiovascular Institute, University of Calgary</p>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://www.robarts.ca/research/scientists/fenster_aaron.html" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Aaron Fenster</a>
-        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Robarts Research Institute, Western University</p>
-      </div>
-      <div style="background: white; padding: 1.5em; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; transition: box-shadow 0.3s;">
-        <a href="https://ovc.uoguelph.ca/clinical-studies/faculty/ryan-appleby/" style="color: #2563eb; font-weight: 500; text-decoration: none; font-style: italic;">Dr. Ryan Appleby</a>
-        <p style="margin: 0.5em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic;">Ontario Veterinary College, University of Guelph</p>
+    </div>
+
+    <!-- Research Collaborators -->
+    <div style="margin-bottom: 2em;">
+      <h4 style="color: #475569; margin-bottom: 1.5em; font-size: 1em; font-weight: 600; font-style: italic; text-align: center; text-transform: uppercase; letter-spacing: 0.5px;">
+        Research Collaborators
+      </h4>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em;">
+        <div style="background: white; padding: 1.8em; border-radius: 8px; border-left: 3px solid #2563eb; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.uottawa.ca/faculty-medicine/directory/dr-nicola-schieda" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">Dr. Nicola Schieda</a>
+          <p style="margin: 0.8em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic; line-height: 1.5;">Director of Abdominal and Pelvic MRI and Prostate Imaging, University of Ottawa</p>
+        </div>
+        <div style="background: white; padding: 1.8em; border-radius: 8px; border-left: 3px solid #2563eb; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://libin.ucalgary.ca/node/287" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">Dr. James White</a>
+          <p style="margin: 0.8em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic; line-height: 1.5;">Stephenson Cardiac Imaging Centre, Libin Cardiovascular Institute, University of Calgary</p>
+        </div>
+        <div style="background: white; padding: 1.8em; border-radius: 8px; border-left: 3px solid #2563eb; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://www.robarts.ca/research/scientists/fenster_aaron.html" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">Dr. Aaron Fenster</a>
+          <p style="margin: 0.8em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic; line-height: 1.5;">Robarts Research Institute, Western University</p>
+        </div>
+        <div style="background: white; padding: 1.8em; border-radius: 8px; border-left: 3px solid #2563eb; border-top: 1px solid #e2e8f0; border-right: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: all 0.3s;">
+          <a href="https://ovc.uoguelph.ca/clinical-studies/faculty/ryan-appleby/" style="color: #2563eb; font-weight: 600; text-decoration: none; font-style: italic; font-size: 1.05em;">Dr. Ryan Appleby</a>
+          <p style="margin: 0.8em 0 0 0; font-size: 0.9em; color: #64748b; font-style: italic; line-height: 1.5;">Ontario Veterinary College, University of Guelph</p>
+        </div>
       </div>
     </div>
   </div>

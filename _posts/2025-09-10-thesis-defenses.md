@@ -11,7 +11,7 @@ We are thrilled to announce the successful defenses of two outstanding graduate 
 
 <div style="margin-bottom: 3em;">
   <div style="padding: 2em; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0; margin-bottom: 2em;">
-    <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic;">🎓 Helena Kunic – MASc Candidate</h3>
+    <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic;">🎓 Helena Kunic – MASc Graduate</h3>
 
     <p style="color: #2563eb; font-weight: 600; margin-bottom: 1em; font-style: italic;">
       <strong>Thesis:</strong> Ultrasound Based Evaluation of Knob Modifications in Pessaries for Stress Urinary Incontinence
@@ -27,7 +27,7 @@ We are thrilled to announce the successful defenses of two outstanding graduate 
   </div>
 
   <div style="padding: 2em; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
-    <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic;">🎓 Negin Piran Nanekaran – PhD Candidate</h3>
+    <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic;">🎓 Negin Piran Nanekaran – PhD Graduate</h3>
 
     <p style="color: #2563eb; font-weight: 600; margin-bottom: 1em; font-style: italic;">
       <strong>Thesis:</strong> Deep Learning and Federated Learning for Prostate Cancer Classification and Recurrence Prediction

@@ -3,7 +3,7 @@ title: "AI Improving Radiation Treatment Planning for Dogs with Cancer"
 date: 2025-05-12
 ---
 
-<img src="{{site.baseurl}}/images/posts/news_eran.jpeg" alt="AI Radiation Treatment Research">
+<img src="{{site.baseurl}}/images/site/news_eran.jpeg" alt="AI Radiation Treatment Research">
 <div class="news-image-caption">Dr. Eranga Ukwatta, Associate Professor, School of Engineering</div>
 
 University of Guelph - College of Engineering Professor Dr. Eranga Ukwatta and team, including graduate student Nicola Billings and researchers in Ontario Veterinary College, University of Guelph, are using artificial intelligence to improve radiation treatment planning for dogs with cancer.

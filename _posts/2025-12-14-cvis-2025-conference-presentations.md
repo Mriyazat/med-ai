@@ -14,7 +14,7 @@ The conference brings together academic and industrial research scientists to sh
 <div style="margin: 2em 0;">
   <h3 style="font-size: 1.3em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; text-align: left;">Mohammadreza's Poster for CVIS 2025</h3>
   <div style="text-align: center;">
-    <img src="{{site.baseurl}}/images/posts/cvis_2025_mohammadreza_poster.png" alt="Mohammadreza Riyazat CVIS 2025 Poster" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+    <img src="{{site.baseurl}}/images/site/cvis_2025_mohammadreza_poster.png" alt="Mohammadreza Riyazat CVIS 2025 Poster" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
   </div>
 </div>
 

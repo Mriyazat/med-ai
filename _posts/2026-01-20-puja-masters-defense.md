@@ -26,7 +26,7 @@ We are thrilled to announce the successful master's defense of Puja Saha from th
     </p>
 
     <p style="color: #334155; line-height: 1.9; font-style: italic;">
-      Puja will soon be presenting this work at <a href="https://spie.org/conferences-and-exhibitions/medical-imaging?utm_source=google&utm_medium=online-advertising&utm_campaign=mi&gad_source=1&gad_campaignid=23285963405&gbraid=0AAAAAD_kU5eBIRS0JzC3MzoeoFecPnvkU&gclid=CjwKCAiAjojLBhAlEiwAcjhrDtMR_tot01ZSvQOOFe8VCxEeJxgzHmM4QM938S1huw5OeSxUSHTx3RoClGcQAvD_BwE" style="color: #2563eb; text-decoration: none; font-weight: 600;">SPIE Medical Imaging</a> in the Computer-Aided Diagnosis track. A journal article is also forthcoming, covering the method's effectiveness under real-world institutional heterogeneity.
+      Puja will soon be presenting this work at <a href="https://spie.org/conferences-and-exhibitions/medical-imaging?utm_source=google&utm_medium=online-advertising&utm_campaign=mi&gad_source=1&gad_campaignid=23285963405&gbraid=0AAAAAD_kU5eBIRS0JzC3MzoeoFecPnvkU&gclid=CjwKCAiAjojLBhAlEiwAcjhrDtMR_tot01ZSvQOOFe8VCxEeJxgzHmM4QM938S1huw5OeSxUSHTx3RoClGcQAvD_BwE" style="color: #2563eb; text-decoration: none; font-weight: 600;">SPIE Medical Imaging</a>. A journal article is also forthcoming, covering the method's effectiveness under real-world institutional heterogeneity.
     </p>
   </div>
 </div>

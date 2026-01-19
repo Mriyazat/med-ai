@@ -4,47 +4,47 @@ publications:
     journal: "Medical Physics"
     year: 2025
     article_url: "https://aapm.onlinelibrary.wiley.com/doi/full/10.1002/mp.18064"
-    image: "/images/pub/FL_setup.jpg"
+    image: "/images/publications/FL_setup.jpg"
 
   - title: "Magnetic resonance imaging–based radiation treatment plans for dogs may be feasible with the use of generative adversarial networks"
     authors: "Nicola Billings, Ryan Appleby, Amin Komeili, Valerie Poirier, Christopher Pinard, Eranga Ukwatta"
     journal: "American Journal of Veterinary Research"
     year: 2025
     article_url: "https://avmajournals.avma.org/view/journals/ajvr/86/6/ajvr.24.08.0248.xml"
-    image: "/images/pub/pseudo-CT.jpg"
+    image: "/images/publications/pseudo-CT.jpg"
 
   - title: "Scribble-based weakly supervised method for segmentation of neonatal cerebral ventricles from 3D ultrasound images"
     authors: "Zachary Szentimrey, Liam Hatala, Sandrine de Ribaupierre, Eranga Ukwatta"
     journal: "Medical Imaging 2025: Ultrasonic Imaging and Tomography"
     year: 2025
     article_url: "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/13412/134120V/Scribble-based-weakly-supervised-method-for-segmentation-of-neonatal-cerebral/10.1117/12.3047231.short"
-    image: "/images/pub/WSL4MIS_method.jpg"
+    image: "/images/publications/WSL4MIS_method.jpg"
 
   - title: "Prediction of prostate cancer recurrence after radiotherapy using a fused machine learning approach: utilizing radiomics from pretreatment T2W MRI images with clinical and pathological information"
     authors: "Negin Piran Nanekaran, Tony H Felefly, Nicola Schieda, Scott C Morgan, Richa Mittal, Eranga Ukwatta"
     journal: "Biomedical Physics & Engineering Express"
     year: 2024
     article_url: "https://iopscience.iop.org/article/10.1088/2057-1976/ad8201/meta"
-    image: "/images/pub/PCa_patients.jpg"
+    image: "/images/publications/PCa_patients.jpg"
 
   - title: "Semi-supervised learning framework with shape encoding for neonatal ventricular segmentation from 3D ultrasound"
     authors: "Zachary Szentimrey, Abdullah Al-Hayali, Sandrine de Ribaupierre, Aaron Fenster, Eranga Ukwatta"
     journal: "Medical Physics"
     year: 2024
     article_url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11232701/"
-    image: "/images/pub/SSL_framework.jpg"
+    image: "/images/publications/SSL_framework.jpg"
 
   - title: "Fully Automated Deep Learning-Based Renal Mass Detection on Multi-Parametric MRI"
     authors: "Rohini Gaikar, Azar Azad, Nicola Schieda, Eranga Ukwatta"
     journal: "IEEE Access"
     year: 2024
     article_url: "https://ieeexplore.ieee.org/abstract/document/10630819/authors"
-    image: "/images/pub/multi-parametric_MRI.gif"
+    image: "/images/publications/multi-parametric_MRI.gif"
 
   - title: "Classification of the quality of canine and feline ventrodorsal and dorsoventral thoracic radiographs through machine learning"
     authors: "Peyman Tahghighi, Ryan B Appleby, Nicole Norena, Eran Ukwatta, Amin Komeili"
     journal: "Veterinary Radiology & Ultrasound"
     year: 2024
     article_url: ""
-    image: "/images/pub/UNETR16.jpg"
+    image: "/images/publications/UNETR16.jpg"
 

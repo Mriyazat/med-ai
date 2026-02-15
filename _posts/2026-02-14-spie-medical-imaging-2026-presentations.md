@@ -6,7 +6,7 @@ date: 2026-02-14
 <div style="max-width: 1000px; margin: 0 auto; line-height: 1.8;">
 
 <p style="font-size: 1.15em; color: #334155; margin-bottom: 2em; font-style: italic;">
-<strong>Puja Saha</strong>, <strong>Pramit Dutta</strong>, and <strong>Zinah Ghulam</strong> will be presenting their research at the <a href="https://spie.org/conferences-and-exhibitions/medical-imaging" style="color: #2563eb; font-weight: 500; text-decoration: none;">SPIE Medical Imaging 2026</a> conference in Vancouver, BC, Canada (February 15–19, 2026).
+<strong>Puja Saha</strong>, <strong>Pramit Dutta</strong>, <strong>Zachary Szentimrey</strong>, and <strong>Zinah Ghulam</strong> will be presenting their research at the <a href="https://spie.org/conferences-and-exhibitions/medical-imaging" style="color: #2563eb; font-weight: 500; text-decoration: none;">SPIE Medical Imaging 2026</a> conference in Vancouver, BC, Canada (February 15–19, 2026).
 </p>
 
 <!-- ===== Puja Saha ===== -->
@@ -59,6 +59,22 @@ date: 2026-02-14
   </div>
 </div>
 
+<!-- ===== Zachary Szentimrey ===== -->
+<div style="margin-bottom: 2.5em;">
+  <div style="padding: 2em; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
+    <h3 style="color: #0f172a; margin-top: 0; font-weight: 700; font-style: italic;">Zachary Szentimrey</h3>
+
+    <p style="color: #2563eb; font-weight: 600; margin-bottom: 0.5em; font-style: italic;">
+      <a href="https://spie.org/medical-imaging/presentation/Development-of-a-deep-learning-liver-segmentation-model-for-patients/13931-22" style="color: #2563eb; text-decoration: none;">Development of a deep learning liver segmentation model for patients with liver disease imaged with handheld point of care ultrasound</a>
+    </p>
+
+    <p style="color: #64748b; font-size: 0.95em; margin-bottom: 0; font-style: italic;">
+      Tuesday, February 17, 2026 &middot; 2:10 – 2:30 PM PST<br>
+      East 8 (Level 2)
+    </p>
+  </div>
+</div>
+
 <!-- ===== Zinah Ghulam ===== -->
 <div style="margin-bottom: 2.5em;">
   <div style="padding: 2em; background: white; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.06); border: 1px solid #e2e8f0;">
@@ -82,7 +98,7 @@ date: 2026-02-14
 
 <div style="padding: 2em; background: linear-gradient(to right, #f0f9ff, #e0f2fe); border-radius: 8px; border-left: 4px solid #2563eb; margin-top: 1em;">
   <p style="color: #0f172a; margin: 0; font-size: 1.1em; line-height: 1.8; font-style: italic;">
-    Congratulations to <strong>Puja</strong>, <strong>Pramit</strong>, and <strong>Zinah</strong> on presenting their work at SPIE Medical Imaging 2026! Their dedication and innovative research continue to push the boundaries of AI-enabled medical image analysis. We wish them all the best at the conference! &#127881;
+    Congratulations to <strong>Puja</strong>, <strong>Pramit</strong>, <strong>Zachary</strong>, and <strong>Zinah</strong> on presenting their work at SPIE Medical Imaging 2026! Their dedication and innovative research continue to push the boundaries of AI-enabled medical image analysis. We wish them all the best at the conference! &#127881;
   </p>
 </div>
 

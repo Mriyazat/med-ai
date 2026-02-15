@@ -29,9 +29,15 @@ date: 2026-02-14
       </p>
     </div>
 
-    <div style="background: linear-gradient(to right, #f0fdf4, #dcfce7); border-left: 4px solid #16a34a; padding: 1em 1.5em; border-radius: 6px;">
+    <div style="background: linear-gradient(to right, #f0fdf4, #dcfce7); border-left: 4px solid #16a34a; padding: 1em 1.5em; border-radius: 6px; margin-bottom: 1.25em;">
       <p style="color: #166534; margin: 0; font-weight: 600; font-style: italic;">
         &#127941; Winner – Computer-Aided Diagnosis Best Paper Award
+      </p>
+    </div>
+
+    <div style="padding: 1.25em 1.5em; background: linear-gradient(to right, #eff6ff, #dbeafe); border-radius: 6px; border-left: 4px solid #2563eb;">
+      <p style="color: #1e40af; margin: 0; font-style: italic; line-height: 1.8;">
+        Congratulations to <strong>Puja</strong> on this outstanding recognition! Being selected as a finalist for the prestigious Robert F. Wagner All-Conference Best Student Paper Award and winning the Computer-Aided Diagnosis Best Paper Award is a remarkable achievement. We are incredibly proud of her contributions to advancing privacy-preserving federated learning for medical imaging. &#127881;
       </p>
     </div>
   </div>
@@ -67,10 +73,17 @@ date: 2026-02-14
       East Exhibition Hall A (Level 1)
     </p>
 
+    <h4 style="font-size: 1.1em; font-weight: bold; font-style: italic; color: #111827; margin-bottom: 1em; text-align: left;">Zinah's Poster for SPIE Medical Imaging 2026</h4>
     <div style="text-align: center;">
-      <a href="{{site.baseurl}}/images/site/spie_2026_zinah_poster.pdf" target="_blank" style="display: inline-block; background: #2563eb; color: white; padding: 0.7em 2em; border-radius: 6px; text-decoration: none; font-weight: 600; font-style: italic;">View Poster (PDF)</a>
+      <img src="{{site.baseurl}}/images/site/spie_2026_zinah_poster.png" alt="Zinah Ghulam – SPIE Medical Imaging 2026 Poster" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
     </div>
   </div>
+</div>
+
+<div style="padding: 2em; background: linear-gradient(to right, #f0f9ff, #e0f2fe); border-radius: 8px; border-left: 4px solid #2563eb; margin-top: 1em;">
+  <p style="color: #0f172a; margin: 0; font-size: 1.1em; line-height: 1.8; font-style: italic;">
+    Congratulations to <strong>Puja</strong>, <strong>Pramit</strong>, and <strong>Zinah</strong> on presenting their work at SPIE Medical Imaging 2026! Their dedication and innovative research continue to push the boundaries of AI-enabled medical image analysis. We wish them all the best at the conference! &#127881;
+  </p>
 </div>
 
 </div>
